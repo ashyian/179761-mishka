@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Aleksandr Shyian](https://up.htmlacademy.ru/adaptive/11/user/179761).
-* Наставник: `Неизвестно`.
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/adaptive/11/user/70260).
 
 ---
 
