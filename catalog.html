@@ -7,67 +7,95 @@
   <body>
 
     <header class="page-header">
-      <h1 class="page-header__title">Mishka</h1> <!-- скрыт (нужен для семантики) -->
-      <div class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Mishka">
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="http://placehold.it/86x35" alt="Mishka">
       </div>
       <nav class="main-nav">
         <div class="main-nav__toggler"></div>
-        <div class="main-nav__wrapper">
-            <!-- пункты навигации -->
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__item-link" href="#">Корзина:</a>
+            <span class="main-nav__cart-status">пока пуста</span>
+          </li>
+        </ul>
       </nav>
+      <h1 class="page-header__title">Каталог товаров</h1>
     </header>
 
     <section class="catalog">
-      <h2>Каталог товаров</h2>
       <article class="product">
         <img class="product__pic product__pic--bunny" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
         <h3 class="product__name">Зайчик-попрыгайчик</h3>
-        <p class="product__parameters">Рост 30 см, вес 200 г</p>
-        <span class="product__price">1 200 руб.</span>
-        <a href="#" class="product__add-to-cart">Добавить в корзину</a>
+        <p class="product__params">Рост 30 см, вес 200 г</p>
+        <b class="product__price">1 200 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
       </article>
       <article class="product">
         <img class="product__pic product__pic--underwear-basket" src="http://placehold.it/260x195" alt="Корзинка для белья">
         <h3 class="product__name">Корзинка для белья</h3>
-        <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-        <span class="product__price">690 руб.</span>
-        <a href="#" class="product__add-to-cart">Добавить в корзину</a>
+        <p class="product__params">Диаметр 15 см, высота 10 см</p>
+        <b class="product__price">690 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
       </article>
       <article class="product">
         <img class="product__pic product__pic--toys-basket" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
         <h3 class="product__name">Большая корзинка для игрушек</h3>
-        <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
-        <span class="product__price">1 500 руб.</span>
-        <a href="#" class="product__add-to-cart">Добавить в корзину</a>
+        <p class="product__params">Диаметр 30 см, высота 30 см</p>
+        <b class="product__price">1 500 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
       </article>
     </section>
 
-    <section class="production-process">
-      <h3>Процесс производства</h3>
-      <video class="production-process__video" width="260" height="150" poster="http://placehold.it/260x150">
+    <section class="manufacturing">
+      <h2 class="manufacturing__title">Процесс производства</h3>
+      <video class="manufacturing__video" width="260" height="150" poster="http://placehold.it/260x150">
         <source src="#" type="video/mp4">
         <source src="#" type="video/ogg">
         <source src="#" type="video/webm">
       </video>
-      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a href="#" class="production-process__order button">Сделать заказ</a>
+      <p class="manufacturing__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="manufacturing__order button" href="#">Сделать заказ</a>
     </section>
 
     <footer class="page-footer">
       <div class="page-footer__social">
-        <span class="social-links">
-          <a href="#" class="social-link social-link--instagram">Instagram</a>
-          <a href="#" class="social-link social-link--facebook">Facebook</a>
-          <a href="#" class="social-link social-link--twitter">Twitter</a>
-        </span>
+        <a href="#" class="page-footer__social-link page-footer__social-link--instagram">Instagram</a>
+        <a href="#" class="page-footer__social-link page-footer__social-link--facebook">Facebook</a>
+        <a href="#" class="page-footer__social-link page-footer__social-link--twitter">Twitter</a>
       </div>
       <div class="page-footer__copyright">
-        <p>Разработано</p>
-        <a href="#" class="page-footer__copyright-link">HTML Academy</a>
+        Разработано <a class="page-footer__copyright-link" href="#">HTML Academy</a>
       </div>
     </footer>
+
+    <section class="adding">
+      <h2 class="adding__title">Добавить в корзину</h2>
+      <p class="adding__desc">Выберите размер:</p>
+      <ul class="adding__list">
+        <li class="adding__item">
+          <input class="adding__radio" type="radio" id="choosed-size-s" name="choosed-size">
+          <label class="adding__text" for="choosed-size-s">S</label>
+        </li>
+        <li class="adding__item">
+          <input class="adding__radio" type="radio" id="choosed-size-m" name="choosed-size">
+          <label class="adding__text" for="choosed-size-m">M</label>
+        </li>
+        <li class="adding__item">
+          <input class="adding__radio" type="radio" id="choosed-size-l" name="choosed-size">
+          <label class="adding__text" for="choosed-size-l">L</label>
+        </li>
+      </ul>
+      <a class="adding__confirm button button--tiffany" href="#">Добавить</a>
+    </section>
 
   </body>
 </html>
