@@ -11,19 +11,19 @@
         <img class="page-header__logo" src="http://placehold.it/86x35" alt="Mishka">
       </div>
       <nav class="main-nav">
-        <div class="main-nav__toggler"></div>
+        <button class="nav-toggle" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="#">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Вязание на заказ</a>
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__item-link" href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__item-link" href="#">Корзина:</a>
+            <a class="main-nav__link" href="#">Корзина:</a>
             <span class="main-nav__cart-status">пока пуста</span>
           </li>
         </ul>
@@ -46,23 +46,23 @@
       <h2 class="sale__title">Вязаные корзинки</h2>
       <b class="sale__subtitle">Товар недели</b>
       <p class="sale__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="sale-params__table">
-        <tr class="sale-params__row">
-          <td class="sale-params__name">Цвет:</td>
-          <td class="sale-params__value">«Тиффани»/серый</td>
+      <table class="params">
+        <tr class="params__item">
+          <td class="params__name">Цвет:</td>
+          <td class="params__value">«Тиффани»/серый</td>
         </tr>
-        <tr class="sale-params__row">
-          <td class="sale-params__name">Диаметр:</td>
-          <td class="sale-params__value">25 см</td>
+        <tr class="params__item">
+          <td class="params__name">Диаметр:</td>
+          <td class="params__value">25 см</td>
         </tr>
-        <tr class="sale-params__row">
-          <td class="sale-params__name">Высота:</td>
-          <td class="sale-params__value">15 см</td>
+        <tr class="params__item">
+          <td class="params__name">Высота:</td>
+          <td class="params__value">15 см</td>
         </tr>
       </table>
       <img class="sale__image" src="http://placehold.it/260x315" alt="Вязаные корзинки">
       <p class="sale__price">Цена: 990 руб.</p>
-      <a class="sale__order button" href="#">Заказать</a>
+      <a class="button" href="#">Заказать</a>
     </section>
 
     <section class="about">
@@ -86,13 +86,13 @@
         <span class="reviews__author-name">Анастасия Красильникова</span>
         <span class="reviews__author-username">@misssssiskras</span>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий</button>
-      <button class="reviews__next" type="button">Следующий</button>
-      <a href="#" class="reviews__write button">Написать</a>
+      <button class="prev" type="button">Предыдущий</button>
+      <button class="next" type="button">Следующий</button>
+      <a class="button" href="#">Написать</a>
     </section>
 
     <section class="contacts">
-      <h2 class="section-title">Контакты</h2>
+      <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table">
         <tr class="contacts__row">
           <td class="contacts__name">e-mail:</td>
@@ -108,38 +108,38 @@
         </tr>
       </table>
       <div class="contacts__map"></div>
-      <a class="contacts__write button" href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </section>
 
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <a href="#" class="page-footer__social-link page-footer__social-link--instagram">Instagram</a>
-        <a href="#" class="page-footer__social-link page-footer__social-link--facebook">Facebook</a>
-        <a href="#" class="page-footer__social-link page-footer__social-link--twitter">Twitter</a>
+      <div class="social">
+        <a href="#" class="social__link social__link--instagram">Instagram</a>
+        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--twitter">Twitter</a>
       </div>
-      <div class="page-footer__copyright">
-        Разработано <a class="page-footer__copyright-link" href="#">HTML Academy</a>
+      <div class="copyright">
+        Разработано <a class="copyright__link" href="#">HTML Academy</a>
       </div>
     </footer>
 
     <section class="adding">
       <h2 class="adding__title">Добавить в корзину</h2>
       <p class="adding__desc">Выберите размер:</p>
-      <ul class="adding__list">
-        <li class="adding__item">
-          <input class="adding__radio" type="radio" id="choosed-size-s" name="choosed-size">
-          <label class="adding__text" for="choosed-size-s">S</label>
+      <ul class="sizes">
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-s" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-s">S</label>
         </li>
-        <li class="adding__item">
-          <input class="adding__radio" type="radio" id="choosed-size-m" name="choosed-size">
-          <label class="adding__text" for="choosed-size-m">M</label>
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-m" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-m">M</label>
         </li>
-        <li class="adding__item">
-          <input class="adding__radio" type="radio" id="choosed-size-l" name="choosed-size">
-          <label class="adding__text" for="choosed-size-l">L</label>
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-l" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-l">L</label>
         </li>
       </ul>
-      <a class="adding__confirm button button--tiffany" href="#">Добавить</a>
+      <a class="button button--tiffany" href="#">Добавить</a>
     </section>
 
   </body>
