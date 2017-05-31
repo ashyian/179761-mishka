@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="http://placehold.it/86x35" alt="Mishka">
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link" href="#">Корзина:</a>
+            <span class="main-nav__cart-status">пока пуста</span>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+
+    <section class="catalog">
+      <article class="product">
+        <img class="product__pic product__pic--bunny" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+        <h2 class="product__name">Зайчик-попрыгайчик</h2>
+        <p class="product__params">Рост 30 см, вес 200 г</p>
+        <b class="product__price">1 200 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
+      </article>
+      <article class="product">
+        <img class="product__pic product__pic--underwear-basket" src="http://placehold.it/260x195" alt="Корзинка для белья">
+        <h2 class="product__name">Корзинка для белья</h2>
+        <p class="product__params">Диаметр 15 см, высота 10 см</p>
+        <b class="product__price">690 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
+      </article>
+      <article class="product">
+        <img class="product__pic product__pic--toys-basket" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+        <h2 class="product__name">Большая корзинка для игрушек</h2>
+        <p class="product__params">Диаметр 30 см, высота 30 см</p>
+        <b class="product__price">1 500 руб.</b>
+        <a class="product__add-to-cart" href="#">Добавить в корзину</a>
+      </article>
+    </section>
+
+    <section class="manufacturing">
+      <h2 class="manufacturing__title">Процесс производства</h2>
+      <video class="manufacturing__video" width="260" height="150" poster="http://placehold.it/260x150">
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/ogg">
+        <source src="#" type="video/webm">
+      </video>
+      <p class="manufacturing__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="button" href="#">Сделать заказ</a>
+    </section>
+
+    <footer class="page-footer">
+      <div class="social">
+        <a href="#" class="social__link social__link--instagram">Instagram</a>
+        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--twitter">Twitter</a>
+      </div>
+      <div class="copyright">
+        Разработано <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+
+    <section class="adding">
+      <h2 class="adding__title">Добавить в корзину</h2>
+      <p class="adding__desc">Выберите размер:</p>
+      <ul class="sizes">
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-s" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-s">S</label>
+        </li>
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-m" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-m">M</label>
+        </li>
+        <li class="sizes__item">
+          <input class="sizes__radio" type="radio" id="choosed-size-l" name="choosed-size">
+          <label class="sizes__text" for="choosed-size-l">L</label>
+        </li>
+      </ul>
+      <a class="button button--tiffany" href="#">Добавить</a>
+    </section>
+
+  </body>
+</html>
