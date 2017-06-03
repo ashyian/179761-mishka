@@ -1,0 +1,17 @@
+.map {
+  display: block;
+  position: relative;
+  margin: 0 -30px;
+  padding: 15px 0 30px;
+}
+
+.map__image {
+  display: absolute;
+  display: block;
+}
+
+.map__pin {
+  position: absolute;
+  left: 123px;
+  top: 179px;
+}

@@ -1,0 +1,33 @@
+.about {
+  padding: 15px 0;
+}
+
+.about__title {
+  @include use-font(25px, 30px, 'OpenSansBold', #000000);
+  margin: 0;
+  padding: 15px 0;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.about__icon-container {
+  margin-bottom: 25px;
+}
+
+.about__icon {
+  fill: #63d1bb;
+}
+
+.about__text {
+  @include use-font(17px, 20px, 'OpenSansBold', #000000);
+}

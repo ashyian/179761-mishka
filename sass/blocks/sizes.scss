@@ -1,0 +1,32 @@
+.sizes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 30px;
+}
+
+.sizes__item {
+  :hover {
+    border-color: #c7c7c7;
+  }
+}
+
+.sizes__radio {
+  display: none;
+  &:checked + .sizes__text {
+    border-color: #62d1ba;
+  }
+}
+
+.sizes__text {
+  border: 2px solid $separate-line;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 75px;
+  height: 50px;
+}

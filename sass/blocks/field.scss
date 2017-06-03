@@ -1,0 +1,96 @@
+.field {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin: 20px 0;
+  &--data-input {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &:hover .field__icon {
+    fill: #62d1ba;
+  }
+}
+
+.field__subtitle {
+  @include use-font(17px, 19px, 'OpenSansBold', #000000);
+  width: 220px;
+  margin-left: 20px;
+  &--top {
+    margin: 0;
+  }
+}
+
+.field__check {
+  position: relative;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $button-default;
+  outline: none;
+  &:checked {
+    background: url(../../img/icon-tick.svg) center center no-repeat;
+    background-size: 24px;
+  }
+}
+
+.field__check--radio {
+  border-radius: 50%;
+  &:checked {
+    background: none;
+  }
+  &:checked::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+    left: 20%;
+    top: 22%;
+  }
+}
+
+.field__text {
+  @include use-font(17px, 18px, 'OpenSans', #000000);
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid $button-default;
+  height: 50px;
+  outline: none;
+}
+
+.field__icon-container {
+  position: absolute;
+  align-self: flex-end;
+}
+
+.field__message {
+  width: auto;
+  padding: 15px;
+  border: 2px solid $button-default;
+  outline: none;
+}
+
+.field__check,
+.field__text,
+.field__message {
+  &:hover {
+    border-color: #62d1ba;
+  }
+}
+
+.field__text,
+.field__message {
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.field__check {
+  &:active {
+    border-color: #c7c7c7;
+  }
+}

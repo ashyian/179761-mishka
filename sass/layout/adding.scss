@@ -1,0 +1,23 @@
+.adding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c7c7c7;
+  padding: 20px 30px 30px;
+  box-shadow: 0px 10px 5px 0px rgba(0,1,1,0.25);
+}
+
+.adding__title {
+  @include use-font(25px, 30px, 'OpenSansBold', #000000);
+  width: 150px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.adding__desc {
+  @include use-font(15px, 30px, 'OpenSans');
+  margin: 0;
+  padding: 10px 0;
+}

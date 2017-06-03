@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding: 25px 0;
+}
+
+.social__link {
+  &:hover .social__logo {
+    fill: #46c1ae;
+  }
+  &:active .social__logo {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
