@@ -1,0 +1,31 @@
+.copyright {
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.copyright__link {
+  @include use-font(19px, 18px, 'OpenSansBold', #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  &:hover .copyright__logo {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:active .copyright__logo {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo-container {
+  margin-left: 25px;
+}
+
+.copyright__logo {
+  fill: #63d1bb;
+}

@@ -1,0 +1,28 @@
+.reviews {
+  padding: 15px 0 30px;
+}
+
+.reviews__title {
+  @include use-font(25px, 30px, 'OpenSansBold', #000000);
+  margin: 0;
+  padding: 15px 0;
+}
+
+.reviews__quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__text {
+  @include use-font(15px, 30px, 'OpenSans')
+  margin: 0;
+}
+
+.reviews__author-name {
+  @include use-font(17px, 24px, 'OpenSansBold', #000000);
+  padding-top: 15px;
+}
+
+.reviews__author-username {
+  @include use-font(17px, 30px, 'OpenSans')
+}

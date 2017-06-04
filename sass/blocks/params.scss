@@ -1,0 +1,14 @@
+.params {
+  @include use-font(15px, 20px, 'OpenSans');
+  width: 260px;
+  margin-bottom: 30px;
+}
+
+.params__item {
+  height: 40px;
+  border-bottom: 1px solid $separate-line;
+}
+
+.params__name {
+  width: 95px;
+}

@@ -1,0 +1,7 @@
+.invite {
+  padding: 10px 0;
+}
+
+.invite__text {
+  @include use-font(13px, 24px, 'OpenSans');
+}

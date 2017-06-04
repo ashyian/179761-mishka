@@ -1,0 +1,23 @@
+.sale {
+  padding: 30px 0;
+}
+
+.sale__title {
+  @include use-font(25px, 30px, 'OpenSansBold', #000000);
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.sale__subtitle {
+  @include use-font(17px, 20px, 'OpenSansBold', #63d1bb);
+  text-transform: uppercase;
+}
+
+.sale__desc {
+  @include use-font(15px, 24px, 'OpenSans');
+}
+
+.sale__price {
+  @include use-font(17px, 24px, 'OpenSansBold');
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+@mixin link-behavior {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin button-behavior {
+  background: none;
+  &:hover {
+    background: $button-default;
+    color: #ffffff;
+  }
+  &:active {
+    color: #8d8d8d;
+  }
+  &--tiffany {
+    border-color: #63d1bb;
+    color: #63d1bb;
+  }
+  &--tiffany:hover {
+    background: #63d1bb;
+    color: #ffffff;
+  }
+}
+
+@mixin use-font($size, $height, $family, $color:#444444) {
+  font: normal $size $family, 'Tahoma', sans-serif;
+  line-height: $height;
+  color: $color;
+}
