@@ -18,18 +18,18 @@
 }
 
 .categories__item {
-  &:hover .categories__icon-container {
+  &:hover .categories__icon {
     opacity: 0.7;
   }
   &:hover .categories__link {
     height: 110px;
   }
   &:hover .categories__text,
-  &:hover .categories__icon-container {
+  &:hover .categories__icon {
     margin-bottom: 5px;
   }
   &:active .categories__text,
-  &:active .categories__icon-container {
+  &:active .categories__icon {
     opacity: 0.3;
   }
 }
@@ -48,11 +48,8 @@
   width: 150px;
 }
 
-.categories__icon-container {
+.categories__icon {
   width: 60px;
   opacity: 0.5;
-}
-
-.categories__icon {
   fill: #149080;
 }
