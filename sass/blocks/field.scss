@@ -8,9 +8,6 @@
     align-items: flex-start;
     justify-content: center;
   }
-  &:hover .field__icon {
-    fill: #62d1ba;
-  }
 }
 
 .field__subtitle {
@@ -24,31 +21,22 @@
 
 .field__check {
   position: relative;
+  flex-shrink: 0;
   appearance: none;
   width: 40px;
   height: 40px;
   border: 2px solid $button-default;
   outline: none;
-  &:checked {
+  &--radio {
+    border-radius: 50%;
+  }
+  &--box:checked {
     background: url(../../img/icon-tick.svg) center center no-repeat;
     background-size: 24px;
   }
-}
-
-.field__check--radio {
-  border-radius: 50%;
-  &:checked {
-    background: none;
-  }
-  &:checked::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #62d1ba;
-    left: 20%;
-    top: 22%;
+  &--radio:checked {
+    background: url(../../img/icon-circle.svg) center center no-repeat;
+    background-size: 20px;
   }
 }
 
@@ -58,17 +46,26 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid $button-default;
+  background-color: none;
   height: 50px;
   outline: none;
+  &:hover + .field__icon,
+  &:focus + .field__icon {
+    opacity: 1;
+    fill: #62d1ba;
+  }
 }
 
 .field__icon {
   position: absolute;
   align-self: flex-end;
+  opacity: 0.2;
 }
 
 .field__message {
-  width: auto;
+  @include use-font(17px, 18px, 'OpenSans', #000000);
+  width: 260px;
+  box-sizing: border-box;
   padding: 15px;
   border: 2px solid $button-default;
   outline: none;
@@ -93,4 +90,66 @@
   &:active {
     border-color: #c7c7c7;
   }
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .field {
+    margin: 10px;
+
+    &--type {
+      width: 100%;
+    }
+
+    &--color {
+      width: 220px;
+    }
+
+    &--data-input {
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .field__check {
+    width: 50px;
+    height: 50px;
+
+    &--box:checked {
+      background-size: 30px;
+    }
+
+  }
+
+  .field__subtitle {
+    width: auto;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .field__text {
+    width: 100%;
+    font-size: 19px;
+    background: none;
+
+    &--name {
+      margin-left: 25px;
+    }
+
+  }
+
+  .field__icon {
+    align-self: center;
+    right: 0;
+  }
+
+  .field__message {
+    font-size: 19px;
+    width: 100%;
+  }
+
 }

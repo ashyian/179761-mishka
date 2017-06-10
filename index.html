@@ -7,7 +7,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="page-container">
 
       <header class="page-header">
         <div class="page-header__top-panel">
@@ -24,35 +24,53 @@
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">
-                <span class="main-nav__text">Каталог товаров</span>
+                <span class="main-nav__text main-nav__text--catalog">Каталог товаров</span>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--order">
               <a class="main-nav__link" href="form.html">
-                <span class="main-nav__text">Вязание на заказ</span>
+                <span class="main-nav__text main-nav__text--order">Вязание на заказ</span>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link" href="#">
                 <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-.8 -.8 17.6 17.6">
                   <path d="M16.5 15L13 11.4c1-1.3 1.6-3 1.6-4.6C14.6 2.5 11.2-1 7-1S-1 2.6-1 7s3.4 7.6 7.7 7.6c1.6 0 3.2-.6 4.5-1.5l3.4 3.5c0 .2.3.3.7.3.6 0 1-.5 1-1 0-.3 0-.6-.2-1zm-15-8c0-3 2.4-5.6 5.4-5.6S12.3 4 12.3 7 10 12.3 7 12.3 1.3 10 1.3 7z"/>
                 </svg>
-                <span class="main-nav__text">Поиск по сайту</span>
+                <span class="main-nav__text main-nav__text--search">Поиск по сайту</span>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--cart">
               <a class="main-nav__link" href="#">
                 <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" width="20.3" height="18.8" viewBox="264.2 371 20.3 18.8">
                   <path d="M283.8 378.2h-3.2l-3.4-6.8c-.2-.4-.6-.5-1-.4-.4.2-.5.7-.3 1l3 6.2h-9.2l3-6.2c.2-.3 0-.8-.3-1-.3 0-.8 0-1 .4l-3.4 6.8h-3c-.5 0-.8.3-.8.7s.3.7.8.7l1 3c-.2 0-.3.3-.3.6 0 .4.3.7.7.7l1.6 5.8h12.7l1.7-5.8c.3 0 .7-.3.7-.7 0-.3 0-.5-.3-.6l1-3c.5 0 .8-.3.8-.8s-.3-.8-.8-.8zm-4.2 10H269l-1-4.2h12.8l-1.2 4.3zm1.6-5.7h-13.7l-.8-2.8H282l-.8 2.8z"/>
                 </svg>
-                <span class="main-nav__text">Корзина: <span class="main-nav__cart-status">пока пуста</span></span>
+                <span class="main-nav__text main-nav__text--cart">Корзина: <span class="main-nav__cart-status">пока пуста</span></span>
               </a>
             </li>
           </ul>
         </nav>
-        <h1 class="title title--main">Милые штуки<br>ручной<br>работы для дома</h1>
+        <nav class="extra-nav">
+          <ul class="extra-nav__list">
+            <li class="extra-nav__item">
+              <a href="" class="extra-nav__link">
+                <span class="extra-nav__text">Новые поступления</span>
+              </a>
+            </li>
+            <li class="extra-nav__item">
+              <a href="" class="extra-nav__link">
+                <span class="extra-nav__text">Распродажа</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <span class="page-header__delivery-info">Бесплатная доставка по России</span>
+        <div class="page-header__title page-header__title--main">
+          <h1 class="page-header__text">Милые штуки <br class="page-header__text-wrap">ручной <br>работы для дома</h1>
+          <div class="page-header__decor"></div>
+        </div>
       </header>
 
 
@@ -101,6 +119,8 @@
           <p class="sale__price">Цена: 990 руб.</p>
           <a class="button" href="#">Заказать</a>
         </section>
+
+        <div class="separator"></div>
 
         <section class="about">
           <h2 class="about__title">Коротко о нас:</h2>
@@ -174,6 +194,8 @@
           <a class="button" href="#">Написать</a>
         </section>
 
+        <div class="separator"></div>
+
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="46.7" height="81.7" viewBox="-11.3 -28.3 46.7 81.7">
@@ -190,7 +212,7 @@
             <tr class="contacts__row">
               <td class="contacts__name">адрес:</td>
               <td class="contacts__value">
-                <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+                <address class="contacts__address">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</address>
               </td>
             </tr>
           </table>

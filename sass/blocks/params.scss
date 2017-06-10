@@ -12,3 +12,14 @@
 .params__name {
   width: 95px;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .params {
+    width: 290px;
+    margin: 20px 0;
+  }
+
+}

@@ -1,3 +1,14 @@
 .page-main {
   padding: 0 30px;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .page-main {
+    position: relative;
+    padding: 0 50px;
+  }
+
+}

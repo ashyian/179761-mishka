@@ -6,6 +6,10 @@
   @include use-font(18px, 30px, 'OpenSansBold', #000000);
 }
 
+.contacts__icon {
+  display: none;
+}
+
 .contacts__table {
   border-collapse: collapse;
 }
@@ -35,4 +39,45 @@
 
 .contacts__address {
   font-style: normal;
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+
+  .contacts__icon {
+    display: block;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__table {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contacts__row {
+    display: inline-block;
+    width: 300px;
+    margin-right: 30px;
+    vertical-align: top;
+  }
+
+  .contacts__row td {
+    font-size: 17px;
+  }
+
 }

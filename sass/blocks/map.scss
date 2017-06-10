@@ -15,3 +15,26 @@
   left: 123px;
   top: 179px;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .map {
+    margin: 10px -50px 60px;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* TODO: убрать растяжку, когда появится новая картинка */
+  .map__image {
+    width: 768px;
+  }
+
+  /* TODO: выставить правильные координаты, когда появится новая картинка */
+  .map__pin {
+    left: 123px;
+    top: 179px;
+  }
+
+}

@@ -8,3 +8,13 @@
   margin-right: 30px;
   cursor: pointer;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .menu-toggle {
+    display: none;
+  }
+
+}

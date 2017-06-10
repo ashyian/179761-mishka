@@ -21,7 +21,7 @@
   margin: 0;
 }
 
-.video_player-container {
+.video__player-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -49,4 +49,42 @@
 .video__desc {
   @include use-font(13px, 24px, 'OpenSans');
   padding: 10px 0;
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px 0;
+  }
+
+  .video__player-container {
+    order: -1;
+    margin: -50px;
+    margin-bottom: 35px;
+    width: 668px;
+    height: 455px;
+  }
+
+  .video__title-container {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .video__title {
+    font-size: 20px;
+    margin-left: 30px;
+    width: auto;
+  }
+
+  .video__desc {
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
 }

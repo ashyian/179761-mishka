@@ -6,3 +6,23 @@
   @include use-font(14px, 16px, 'OpenSans');
   padding-bottom: 15px;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info__note {
+    order: 1;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0;
+  }
+
+}

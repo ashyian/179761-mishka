@@ -13,3 +13,32 @@
     width: 185px;
   }
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .sale .button {
+    width: 290px;
+  }
+
+  .reviews .button {
+    order: 2;
+    margin-top: 80px;
+    width: 175px;
+  }
+
+  .contacts .button {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .info .button {
+    width: 230px;
+  }
+
+  .video .button {
+    width: 100%;
+  }
+
+}

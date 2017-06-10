@@ -26,3 +26,47 @@
 .reviews__author-username {
   @include use-font(17px, 30px, 'OpenSans')
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 -50px 70px;
+    padding: 0 50px;
+    height: 460px;
+    background: #FFFFFF url('../../img/review@1x.jpg') -50px 0 no-repeat;
+  }
+
+  .reviews__title {
+    order: 1;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 80px 0 0;
+  }
+
+  .reviews__quote {
+    order: 3;
+    padding: 50px 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    padding-bottom: 30px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    width: 330px;
+  }
+
+  .reviews__author-username {
+    width: 330px;
+  }
+
+}

@@ -5,3 +5,18 @@
 .invite__text {
   @include use-font(13px, 24px, 'OpenSans');
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .invite {
+    padding: 50px 0;
+  }
+
+  .invite__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
