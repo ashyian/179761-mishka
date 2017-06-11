@@ -10,11 +10,11 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  &:hover .copyright__logo {
-    fill: #46c1ae;
-  }
   &:active {
     opacity: 0.3;
+  }
+  &:hover .copyright__logo {
+    fill: #46c1ae;
   }
   &:active .copyright__logo {
     fill: #46c1ae;
@@ -22,10 +22,18 @@
   }
 }
 
-.copyright__logo-container {
+.copyright__logo {
   margin-left: 25px;
+  fill: #63d1bb;
 }
 
-.copyright__logo {
-  fill: #63d1bb;
+
+
+@media #{$tablet-widths} {
+
+  .copyright {
+    border: none;
+    width: 180px;
+  }
+
 }

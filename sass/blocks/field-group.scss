@@ -11,3 +11,56 @@
   margin-left: -10px;
   padding: 0 10px;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .field-group {
+    position: relative;
+    border: none;
+    padding: 40px 50px;
+    margin: 0 -50px;
+    width: 100%;
+    &:nth-child(2),
+    &--phone,
+    &--mail {
+      background-color: #f1f1f1;
+    }
+    &--phone {
+      padding-bottom: 0;
+    }
+    &--mail {
+      padding-top: 0;
+    }
+  }
+
+  .field-group__name {
+    display: block;
+    position: absolute;
+    top: 70px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .field-group--mail .field-group__name {
+    top: 30px;
+  }
+
+  .field__container {
+    margin-left: 155px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+@media #{$desktop-widths} {
+
+  .field-group__name {
+    left: 110px;
+  }
+
+}

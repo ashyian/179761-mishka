@@ -9,3 +9,41 @@
   border: 1px solid $separate-line;
   padding: 0;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .pagination {
+    border: none;
+    position: absolute;
+    width: 167px;
+    margin: 0;
+    bottom: 60px;
+    right: 50px;
+  }
+
+  .pagination__item {
+    border: none;
+  }
+
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .pagination {
+    border: none;
+    position: absolute;
+    width: 167px;
+    margin: 0;
+    bottom: 100px;
+    right: 0;
+  }
+
+  .pagination__item {
+    border: none;
+  }
+
+}

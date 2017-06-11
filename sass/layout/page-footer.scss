@@ -5,3 +5,39 @@
   background-color: #f1f1f1;
   padding: 0 30px;
 }
+
+.page-footer__link {
+  display: none;
+  margin-right: 80px;
+}
+
+.page-footer__logo {
+  transform: scale(1.11);
+}
+
+.page-footer__link:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo:hover {
+  fill: #46c1ae;
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 145px;
+    padding: 0 50px;
+  }
+
+  .page-footer__link {
+    display: block;
+  }
+
+}

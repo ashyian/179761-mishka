@@ -21,3 +21,85 @@
   @include use-font(17px, 24px, 'OpenSansBold');
   text-align: center;
 }
+
+
+
+@media #{$tablet-widths} {
+
+  .sale {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 0 50px;
+  }
+
+  .sale__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 30px;
+  }
+
+  .sale__subtitle {
+    position: absolute;
+    width: 75px;
+    top: 50px;
+    right: 25px;
+    text-align: center;
+    line-height: 17px;
+  }
+
+  .sale__desc {
+    font-size: 17px;
+    line-height: 30px;
+    width: 290px;
+  }
+
+  .sale__price {
+    font-size: 20px;
+    width: 290px;
+    padding: 10px 0;
+  }
+
+  .sale__image {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 330px;
+    height: 400px;
+  }
+
+}
+
+
+
+@media #{$desktop-widths} {
+
+  .sale {
+    padding: 120px 175px 80px;
+  }
+
+  .sale__title {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 10;
+  }
+
+  .sale__subtitle {
+    top: 135px;
+    left: 40px;
+  }
+
+  .sale__price {
+    padding-top: 0;
+    margin-top: 100px;
+  }
+
+  .sale__image {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
+
+}
