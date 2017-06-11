@@ -54,3 +54,13 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .field-group__name {
+    left: 110px;
+  }
+
+}

@@ -86,3 +86,31 @@
   }
 
 }
+
+
+@media #{$desktop-widths} {
+
+  .product {
+    flex-direction: column;
+    width: 316px;
+    height: 660px;
+  }
+
+  .product__picture {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product__data {
+    padding: 0;
+  }
+
+  .product__info-panel {
+    margin: 25px 25px 0;
+  }
+
+  .product__buy-panel {
+    margin: 0 25px;
+  }
+
+}

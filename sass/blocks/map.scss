@@ -38,3 +38,22 @@
   }
 
 }
+
+
+@media #{$desktop-widths} {
+
+  .map {
+    position: absolute;
+    margin: 0;
+    height: 456px;
+    width: 525px;
+    right: 0;
+    top: 70px;
+  }
+
+  /* TODO: убрать растяжку, когда появится новая картинка */
+  .map__image {
+    width: 100%;
+  }
+
+}

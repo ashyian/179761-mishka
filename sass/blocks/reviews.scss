@@ -70,3 +70,34 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .reviews {
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    padding-left: 175px;
+    height: 460px;
+    background: #FFFFFF url('../../img/review@1x.jpg') -50px 0 no-repeat;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 70px;
+  }
+
+  .reviews__quote {
+    order: 3;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
+  }
+
+}

@@ -153,3 +153,25 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .field {
+    margin: 10px 20px;
+
+    &--type {
+      width: 100%;
+    }
+
+    &--color {
+      width: 220px;
+    }
+
+    &--data-input {
+      width: 700px;
+    }
+  }
+
+}

@@ -27,6 +27,7 @@
 
 .main-nav__icon {
   position: absolute;
+  opacity: 0.2;
   width: 20px;
 }
 
@@ -38,15 +39,16 @@
 .main-nav__link {
   &:hover .main-nav__icon {
     fill: #63d1bb;
+    opacity: 1;
   }
   &:active .main-nav__icon {
     fill: #63d1bb;
     opacity: 0.3;
   }
-  &:hover .main-nav__text {
+  &:hover {
     opacity: 0.6;
   }
-  &:active .main-nav__text {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -116,6 +118,44 @@
 
   .main-nav__text--cart {
     margin-left: 30px;
+  }
+
+}
+
+
+
+@media #{$desktop-widths} {
+
+  .main-nav {
+    top: 0;
+  }
+
+  .main-nav__item--catalog {
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__item--order {
+    flex-grow: 1;
+    margin-left: 35px;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--order {
+    height: 90px;
+    width: 185px;
+  }
+
+  .main-nav__item--cart {
+    margin-left: 35px;
+  }
+
+  .main-nav__item--search,
+  .main-nav__item--cart {
+    top: 0;
+  }
+
+  .main-nav__text {
+    font-size: 17px;
   }
 
 }

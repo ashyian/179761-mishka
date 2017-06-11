@@ -1,8 +1,8 @@
 .separator {
   display: none;
-  height: 17px;
-  background: url('../../img/wavy-line.png') repeat-x;
 }
+
+
 
 @media #{$tablet-widths} {
 
@@ -10,6 +10,22 @@
     display: block;
     margin: 0 -50px;
     width: 768px;
+    height: 17px;
+    background: url('../../img/wavy-line.png') repeat-x;
+  }
+
+}
+
+
+
+@media #{$desktop-widths} {
+
+  .separator {
+    display: block;
+    margin: 0;
+    width: 1050px;
+    height: 23px;
+    background: url('../../img/wavy-line-desktop.png') repeat-x;
   }
 
 }

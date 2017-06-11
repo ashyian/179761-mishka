@@ -81,3 +81,36 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .contacts {
+    display: block;
+    position: relative;
+    padding: 140px 0 100px 175px;
+  }
+
+  .contacts__icon {
+    position: absolute;
+    left: 60px;
+    top: 130px;
+  }
+
+  .contacts__title {
+    display: inline-block;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__table {
+    width: 320px;
+    margin: 25px 0;
+  }
+
+  .contacts__row {
+    display: table-row;
+  }
+
+}

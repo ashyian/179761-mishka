@@ -1,0 +1,8 @@
+@media #{$desktop-widths} {
+
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 0;
+  }
+}

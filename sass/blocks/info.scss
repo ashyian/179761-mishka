@@ -26,3 +26,13 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .info__note {
+    margin-right: 175px;
+  }
+
+}

@@ -69,3 +69,37 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .sale {
+    padding: 120px 175px 80px;
+  }
+
+  .sale__title {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 10;
+  }
+
+  .sale__subtitle {
+    top: 135px;
+    left: 40px;
+  }
+
+  .sale__price {
+    padding-top: 0;
+    margin-top: 100px;
+  }
+
+  .sale__image {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
+
+}

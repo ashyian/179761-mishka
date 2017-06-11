@@ -42,3 +42,21 @@
   }
 
 }
+
+
+
+@media #{$desktop-widths} {
+
+  .contacts .button {
+    margin: 70px 0 0;
+  }
+
+  .info .button {
+    margin-left: 175px;
+  }
+
+  .video .button {
+    width: 230px;
+  }
+
+}

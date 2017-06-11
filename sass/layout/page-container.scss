@@ -1,13 +1,24 @@
 .page-container {
-  border:  1px solid black;
   margin: 0 auto;
   width: 320px;
 }
+
+
 
 @media #{$tablet-widths} {
 
   .page-container {
     width: 768px;
+  }
+
+}
+
+
+
+@media #{$desktop-widths} {
+
+  .page-container {
+    width: 1150px;
   }
 
 }
