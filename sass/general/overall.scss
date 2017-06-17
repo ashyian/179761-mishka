@@ -1,0 +1,38 @@
+// ----------------------- MOBILE -----------------------
+
+
+body {
+  outline: 1px solid black;
+  // position
+  position: relative;
+  // size
+  width: 320px;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  body {
+    outline: 1px solid black;
+  // size
+    width: 768px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  body {
+    outline: 1px solid black;
+  // size
+    width: 1150px;
+  }
+
+}

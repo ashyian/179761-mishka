@@ -1,0 +1,42 @@
+// ----------------------- MOBILE -----------------------
+
+.social {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // size
+  width: 145px;
+  // indent
+  padding: 24px 0;
+}
+
+.social__icon {
+
+  &:hover {
+    // background
+    fill: #46c1ae;
+  }
+
+  &:active {
+    // stylization
+    opacity: 0.3;
+  }
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .social {
+    // display
+    justify-content: space-around;
+    // size
+    width: 183px;
+    // indent
+    padding: 0;
+  }
+
+}

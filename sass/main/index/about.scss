@@ -1,0 +1,106 @@
+// ----------------------- MOBILE -----------------------
+
+.about {
+  // indents
+  padding: 29px 28px 10px;
+}
+
+.about__title {
+  // indents
+  margin: 0 0 32px 0;
+  // font
+  font: bold 25px/30px 'Open Sans', 'Tahoma', sans-serif;
+  color: #000;
+}
+
+.about__item {
+  // display
+  display: flex;
+  flex-direction: column;
+}
+
+.about__icon {
+  // indents
+  margin: 0 0 16px 0;
+}
+
+.about__text {
+  // indents
+  margin: 0 0 30px 0;
+  // font
+  font: bold 17px/20px 'Open Sans', 'Tahoma', sans-serif;
+  color: #000;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .about {
+    // indents
+    padding: 58px 46px 40px;
+  }
+
+  .about__title {
+    // indents
+    margin-bottom: 40px;
+    // font
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    // display
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    // size
+    width: 50%;
+    // indents
+    padding: 13px 0;
+
+    &--ecology, &--handmade {
+      order: 1;
+    }
+
+    &--style, &--support {
+      order: 2;
+    }
+
+    &--likes, &--giftpack {
+      order: 3;
+    }
+  }
+
+  .about__text {
+    // font
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .about {
+    // indents
+    padding: 71px 226px 48px 226px;
+  }
+
+  .about__title {
+    // indents
+    margin-bottom: 39px;
+    // font
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}

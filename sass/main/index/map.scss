@@ -1,0 +1,57 @@
+// ----------------------- MOBILE -----------------------
+
+.map {
+  // display
+  display: block;
+  // position
+  position: relative;
+  // indents
+  margin: 0 -28px 39px -28px;
+}
+
+.map__image {
+  // display
+  display: block;
+}
+
+.map__pin {
+  // positioning
+  position: absolute;
+  top: 164px;
+  left: 124px;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .map {
+    // indents
+    margin: 0 -50px 54px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .map {
+    // position
+    position: absolute;
+    top: 85px;
+    right: 48px;
+    // size
+    width: 525px;
+    height: 457px;
+    // indents
+    margin: 0;
+    // background
+    background-color: lightgray;
+  }
+
+}

@@ -1,0 +1,184 @@
+// ----------------------- MOBILE -----------------------
+
+.video {
+  // indents
+  padding: 0 0 32px 0;
+  margin: 3px 30px 58px;
+  // borders
+  outline: 1px solid #ececec;
+}
+
+.video__title-container {
+  // display
+  display: flex;
+  align-items: center;
+  // indents
+  padding: 25px 35px 24px;
+}
+
+.video__icon {
+  // display
+  flex-shrink: 0;
+}
+
+.video__title {
+  // indents
+  margin-left: 23px;
+  // font
+  font: bold 17px/24px 'Open Sans', 'Tahoma', sans-serif;
+  color: #000;
+}
+
+.video__player-container {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // indents
+  margin: 0 0 26px 0;
+}
+
+.video__play-button {
+  // display
+  position: absolute;
+  // reset browser settings
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+
+  &:hover {
+    // transform
+    transform: scale(1.2);
+  }
+
+  &:active {
+    // transform
+    transform: scale(0.8);
+    // stylization
+    opacity: 0.3;
+  }
+}
+
+.video__desc {
+  // indents
+  padding: 0 34px;
+  margin: 0 0 25px 0;
+  // font
+  font: normal 13px/24px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .video {
+    // display
+    display: flex;
+    flex-direction: column;
+    // indents
+    padding-bottom: 45px;
+    margin: 0 50px 64px;
+    // borders
+    outline: 1px solid #ececec;
+  }
+
+  .video__player-container {
+    background-color: lightgray;
+    // display
+    order: -1;
+    // size
+    width: 668px;
+    height: 455px;
+    // indents
+    margin-bottom: 34px;
+  }
+
+  .video__title-container {
+    // indents
+    padding: 0 42px;
+    margin-bottom: 28px;
+  }
+
+  .video__title {
+    // indents
+    margin-left: 32px;
+    // font
+    font-size: 20px;
+  }
+
+  .video__desc {
+    // indents
+    padding: 0 40px;
+    margin-bottom: 35px;
+    // font
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .video {
+    // display
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // size
+    height: 455px;
+    // indents
+    padding: 0;
+    margin-bottom: 104px;
+  }
+
+  .video__player-container {
+    // size
+    width: 682px;
+    height: 455px;
+    // indents
+    padding: 0;
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .video__title-container, .video__desc {
+    // size
+    width: 230px;
+  }
+
+  .video__title-container {
+    // display
+    flex-direction: column;
+    align-items: flex-start;
+    // indents
+    padding: 0;
+    margin-top: 41px;
+    margin-bottom: 33px;
+  }
+
+  .video__icon {
+    // indents
+    margin-bottom: 22px;
+  }
+
+  .video__title {
+    // indents
+    margin: 0;
+  }
+
+  .video__desc {
+    // indents
+    padding: 0;
+    margin-bottom: 46px;
+  }
+
+}

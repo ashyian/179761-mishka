@@ -1,0 +1,92 @@
+// ----------------------- MOBILE -----------------------
+
+.categories__item {
+  &--light {
+    // background
+    background-color: #63d1bb;
+  }
+  &--dark {
+    // background
+    background-color: #56c3b2;
+  }
+}
+
+.categories__link {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // indents
+  padding: 20px 27px 23px 28px;
+  // font
+  font: bold 19px/24px 'Open Sans', 'Tahoma', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.categories__text {
+  // size
+  width: 120px;
+}
+
+.categories__icon {
+  // stylization
+  opacity: 0.5;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .categories {
+    // position
+    position: absolute;
+    top: 715px;
+    // size
+    width: 668px;
+    // indent
+    padding: 0 51px;
+  }
+
+  .categories__list {
+    // display
+    display: flex;
+  }
+
+  .categories__item {
+    // size
+    width: 100%;
+    margin-top: 5px;
+
+    &:hover {
+      margin-top: 0;
+    }
+  }
+
+  .categories__link {
+    // indents
+    padding: 28px 30px 33px 35px;
+  }
+
+  .categories__text {
+    // font
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .categories {
+    // size
+    width: 1050px;
+  }
+
+}

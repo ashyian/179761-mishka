@@ -1,0 +1,154 @@
+// ----------------------- MOBILE -----------------------
+
+.weekly {
+  // indents
+  padding: 27px 30px 40px;
+}
+
+.weekly__title {
+  // indents
+  margin: 0 0 5px 0;
+  // font
+  font: bold 25px/30px 'Open Sans', 'Tahoma', sans-serif;
+  color: #000;
+}
+
+.weekly__subtitle {
+  // display
+  display: inline-block;
+  // indents
+  margin: 0 0 23px 0;
+  // font
+  font: bold 17px/20px 'Open Sans', 'Tahoma', sans-serif;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.weekly__desc {
+  // indents
+  margin: 0 0 17px 0;
+  // font
+  font: normal 15px/24px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444444;
+}
+
+.weekly__image {
+  // display
+  display: block;
+  // indents
+  margin: 0 0 24px 0;
+}
+
+.weekly__price {
+  // indents
+  margin: 0 0 25px 0;
+  // font
+  font: bold 17px/24px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444444;
+  text-align: center;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .weekly {
+    // position
+    position: relative;
+    // indents
+    padding: 52px 47px 60px;
+  }
+
+  .weekly__title {
+    // indents
+    margin-bottom: 49px;
+    // font
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .weekly__subtitle {
+    // position
+    position: absolute;
+    top: 63px;
+    right: 50px;
+    // size
+    width: 125px;
+    // font
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .weekly__desc, .weekly__price {
+    // size
+    width: 290px;
+  }
+
+  .weekly__desc {
+    // indents
+    margin-bottom: 34px;
+    // font
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .weekly__image {
+    // positon
+    position: absolute;
+    top: 159px;
+    right: 50px;
+    // size
+    width: 333px;
+    height: 404px;
+  }
+
+  .weekly__price {
+    // indents
+    margin-bottom: 34px;
+    // font
+    font-size: 20px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .weekly {
+    // indents
+    padding: 116px 50px 85px 226px;
+  }
+
+  .weekly__title {
+    // font
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .weekly__subtitle {
+    // position
+    top: 132px;
+    left: 71px;
+  }
+
+  .weekly__desc {
+    // indents
+    margin-bottom: 47px;
+  }
+
+  .weekly__image {
+    // positon
+    top: 64px;
+    right: 48px;
+    z-index: -1;
+    // size
+    width: 525px;
+    height: 636px;
+  }
+
+}

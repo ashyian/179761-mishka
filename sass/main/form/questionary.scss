@@ -1,0 +1,62 @@
+// ----------------------- MOBILE -----------------------
+
+.questionary {
+  // indents
+  margin: 0 0 55px 0;
+}
+
+.questionary__form {
+  // display
+  display: flex;
+  flex-direction: column;
+}
+
+.questionary__note {
+  // indents
+  margin: 0 0 32px 30px;
+  // font
+  font: normal 14px/16px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .questionary {
+    // position
+    position: relative;
+    // indents
+    margin: 0 0 63px 0;
+  }
+
+  .questionary__note {
+    // indents
+    margin: 0 50px 0 0;
+    // font
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .questionary {
+    // indents
+    margin-bottom: 62px;
+  }
+
+  .questionary__note {
+    // indents
+    margin-right: 223px;
+  }
+
+}

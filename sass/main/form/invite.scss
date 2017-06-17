@@ -1,0 +1,44 @@
+// ----------------------- MOBILE -----------------------
+
+.invite {
+  // indents
+  padding: 23px 30px;
+}
+
+.invite__text {
+  // font
+  font: normal 13px/24px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .invite {
+    // indents
+    padding: 79px 50px 8px;
+  }
+
+  .invite__text {
+    // font
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .invite {
+    // indents
+    padding: 150px 250px 6px 225px;
+  }
+
+}

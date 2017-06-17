@@ -1,49 +1,51 @@
-// BASE
-
-@import "base/normalize.scss";
-@import "base/fonts.scss";
-
 // HELPERS
 
 @import "helpers/variables.scss";
-@import "helpers/mixins.scss";
 
-// LAYOUTS
+// GENERAL
 
-@import "layout/scaffolding.scss";
-@import "layout/page-container.scss";
-@import "layout/page-header.scss";
-@import "layout/page-main.scss";
-@import "layout/page-footer.scss";
-@import "layout/adding.scss";
+@import "general/normalize.scss";
+@import "general/reset.scss";
+@import "general/fonts.scss";
+@import "general/overall.scss";
+@import "general/button.scss";
 
-// BLOCKS
+// HEADER
 
-// all pages
-@import "blocks/menu-toggle.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/extra-nav.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
-@import "blocks/sizes.scss";
-@import "blocks/button.scss";
-@import "blocks/separator.scss";
-// index.html
-@import "blocks/categories.scss";
-@import "blocks/sale.scss";
-@import "blocks/params.scss";
-@import "blocks/about.scss";
-@import "blocks/reviews.scss";
-@import "blocks/pagination.scss";
-@import "blocks/leaf-button.scss";
-@import "blocks/contacts.scss";
-@import "blocks/map.scss";
-// catalog.html
-@import "blocks/catalog.scss";
-@import "blocks/product.scss";
-@import "blocks/video.scss";
-// form.html
-@import "blocks/invite.scss";
-@import "blocks/info.scss";
-@import "blocks/field-group.scss";
-@import "blocks/field.scss";
+@import "header/header.scss";
+@import "header/menu.scss";
+@import "header/menu-toggle.scss";
+
+// MAIN / INDEX
+
+@import "main/index/categories.scss";
+@import "main/index/weekly.scss";
+@import "main/index/details.scss";
+@import "main/index/about.scss";
+@import "main/index/reviews.scss";
+@import "main/index/pagination.scss";
+@import "main/index/contacts.scss";
+@import "main/index/map.scss";
+
+// MAIN / CATALOG
+
+@import "main/catalog/catalog.scss";
+@import "main/catalog/product.scss";
+@import "main/catalog/video.scss";
+
+// MAIN / FORM
+
+@import "main/form/invite.scss";
+@import "main/form/questionary.scss";
+@import "main/form/fieldset.scss";
+
+// FOOTER
+
+@import "footer/footer.scss";
+@import "footer/social.scss";
+@import "footer/copyright.scss";
+
+// MODAL
+
+@import "modal/modal.scss";
+@import "modal/sizes.scss";
