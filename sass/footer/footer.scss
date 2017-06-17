@@ -1,0 +1,52 @@
+// ----------------------- MOBILE -----------------------
+
+.footer {
+  // display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // indents
+  padding: 0 30px;
+  // background
+  background-color: #f1f1f1;
+}
+
+.footer__link {
+  // display
+  display: none;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .footer {
+    // display
+    flex-direction: row;
+    justify-content: space-between;
+    // size
+    min-height: 150px;
+    // indents
+    padding: 0 50px;
+  }
+
+  .footer__link {
+    // display
+    display: block;
+    // size
+    width: 183px;
+
+    &:hover {
+      // background
+      fill: #46c1ae;
+    }
+
+    &:active {
+      // stylization
+      opacity: 0.3;
+    }
+  }
+
+}

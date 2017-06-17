@@ -1,244 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- layout -->
-    <link rel="stylesheet" href="css/layout/container.css">
-    <link rel="stylesheet" href="css/layout/page-header.css">
-    <link rel="stylesheet" href="css/layout/page-main.css">
-    <link rel="stylesheet" href="css/layout/scaffolding.css">
-    <!-- header -->
-    <link rel="stylesheet" href="css/blocks/menu-toggle.css">
-    <link rel="stylesheet" href="css/blocks/main-nav.css">
-    <link rel="stylesheet" href="css/blocks/extra-menu.css">
-    <!-- footer -->
-    <link rel="stylesheet" href="css/blocks/copyright.css">
-    <!-- form.html -->
-    <link rel="stylesheet" href="css/blocks/field.css">
   </head>
   <body>
 
-    <div class="page-container">
+    <header class="header">
 
-      <header class="page-header">
-        <div class="page-header__top-panel">
-          <a class="page-header__link" href="index.html">
-            <svg class="page-header__logo" xmlns="http://www.w3.org/2000/svg" width="85.6" height="35" viewBox="32.5 20.2 85.6 35">
-              <path d="M36.6 46.5c0-3.5-.2-7-.3-10.4v-1 .5l2 4c.7 1 1 2.5 1.5 3.8-.2.2-.3.4-.2.6 0 0 0 .2.2.2.5.5 1.5.2 2 0 .3 0 .6-.2.8-.4.3 0 .7-.5.6-1v-.2l.7-3.3c.2-1.2.6-2.3 1-3.5 0 .6 0 1 .2 1.6v6.4c0 .7 0 1.4.2 2 0 .4.3 1.6.2 1.7-.5.5-.4 1 .3 1.2.7.2 1.7 0 2.3-.6 1-1 .5-2.3.3-3.5-.4-2 0-4.2 0-6.2 0-2.3-.5-4.5-.4-6.8 0-1.8.3-3.7-.3-5.4v-.5c.2-1-2.8-.4-3.2.4-.3 0-.5.4-.3.7v.2c-.5 2.6-1.3 5.2-2.2 7.8l-1 3-1.4-3c-1.3-2.7-2.3-5.7-3.7-8.5 0-1.2-2.7-1-3.3 0-.7 1.5-.6 3-.4 4.5.3 1.7.3 3.4.3 5 0 3.5.2 6.8.3 10-.3.5-.4 1 0 1.3 0 .3.2.4.4.6.8.6 3 0 3-1zM54.8 28c0-.5-3.4.2-3.3 1 .3 1.8.2 3.6.2 5.4 0 1.7.4 3.3.6 5 .2 1.7 0 3.5 0 5.2.2.8.7 2.3.2 3-.4.5 1.2.3 1.3.3.6-.2 1.5-.4 2-1 .5-.7 0-2 0-2.8-.3-1.7 0-3.6-.2-5.3 0-1.8-.6-3.4-.6-5 0-2 0-4-.2-6zM58 34.8c1 2.5 4.6 1.3 6.5 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1 1 2.8.2 3.7-.5.6-1.7.6-2.4.6-.6 0-1.8.3-2.3-.3-.8-1.2 0-3.2 0-4.6-.2-.8-3.5 0-3.4 1 .2 2-1.2 5 2 5.4 2 .3 4.3 0 6.3-.8 1-.3 2-.7 2.7-1.5 1-.8.6-2 .4-3-.6-2.4.6-5.2-1-7.4-1.8-2.2-5-.6-7.2-1.2-1.2-.3-1.2-2-1.2-3s0-2.2-.2-3.4c0-.8 0-1.7.6-2.4l.7-.3h1c1.3 0 4 0 3.4 2-.3 1 3 .4 3.2-.5 1-4-6-3-8-2.6-2 .5-4 1.6-4.2 3.7l.3 3c0 1.2-.2 2.4.3 3.5zM72.4 36.7l-.2 5.4c0 1 0 2 .3 2.8 0 .8.4 2 0 2.8 0 .6 3 .2 3.4-.6.3-1.5-.3-3.4-.5-5v-4.3c1.8 0 3.5-.3 5.2 0L81 41l.2 3c0 1 0 2.2-.2 3-.7 1.7 2.6 1.6 3 .3.7-1.6.5-3.6.4-5.2 0-2-.4-4-.4-6 0-3.3-.6-6.4-.6-9.6 0-1.6-3.4-1-3.4.3 0 3 .5 6 .6 9v.3c-1.6 0-3.3 0-5 .2.3-4-.4-7.8-.3-11.7 0-.5-3.2 0-3.3 1 0 3.7.5 7.4.4 11.2zM86.5 42c-.3.3-.2.4 0 .5V47c-.5.6.2 1 .8 1 .7 0 2.3-.4 2.3-1.2.2-1.8.3-3.6.2-5.3 1.4-1.5 2.5-3 3.5-4.8.6 1.3 1.2 2.5 1.6 4 .7 2.2 2 4.3 2.6 6.6.4 1.6 3.7.7 3.3-.8-.8-2.4-2-4.5-2.8-6.8-.8-2.3-2-4.4-3-6.6.8-1.5 1.7-3 2.5-4.8.6-1.5 1.2-3.2 2.5-4.3.5-.5.5-1-.2-1s-1.7.2-2.3.7c-1.3 1-2 2.2-2.7 3.6l-2.5 5v.5c-.6.3-.8.6-.7 1l-2 4c-.3-4.7-1-9.4-1-14 0-1-3.4-.4-3.4.8.3 5.8 1 11.6 1 17.4zM118 35.8c0-.7-1-.7-2-.6v-1c0-2 0-4.4-.2-6.7-.2-2-1.4-2.8-3.4-2.7-2 0-4.4.4-6.3 1.2-2 .8-3.3 2.5-3.7 4.8-.5 2.5.2 5.2.3 7.8v8.8c0 .5 3.3 0 3.3-1v-7c0-.6 0-1.3-.2-2 1.2-.4 3.2 0 4.3.2 1 0 2-.2 2.8-.3 0 2 0 4 .2 6 0 1 .4 3-.3 3.7-.4.4 1.3.3 1.3.3.7-.2 1.5-.4 2-1 .8-.8.3-3 .3-4.2v-4.8c.8 0 2-.7 1.7-1.4zm-6.6-.2c-2 0-4-.3-5.7 0l-.2-3c-.2-2 0-4.8 2-6 .4-.3 1.3-.2 2-.3.7-.2 1.5-.4 2.3 0 1 .8.7 3.2.7 4.2 0 1.7.2 3.4.3 5h-1.4zM51.2 24.3v.9l.5.5c.3.2.7.2 1 .2.5-.2 1-.3 1.3-.6 0 0 .2 0 .2-.2.5-.2.8-.7.6-1-.4-1-.3-2-.3-3 0-.8-.8-1-1.5-1-.6 0-1.8.5-1.8 1.3v2.8zM112.7 53.5c-1.5-.6-3.2-.6-4.8-.8l-5-.5h-5l-5 .4c-6.3.2-12.8.2-19.4 0-6.5 0-13-.4-19.6-.4-3.3 0-6.6 0-10 .3-1.5.2-3 .5-4.8 1-1.6.3-3 .8-4.8 1 1.7.3 3.4.2 5 .2l5 .2c3-.2 6.4-.3 9.6-.3 6.5 0 13 .3 19.6.4 6.5.3 13 .3 19.7 0l5-.2c1.5 0 3-.2 4.7 0l5-.6c1.6-.3 3-.7 4.8-.5V53v.5z"/>
-            </svg>
-          </a>
-          <button class="menu-toggle" type="button">
-            <svg class="menu-toggle__pic" xmlns="http://www.w3.org/2000/svg" width="20.5" height="20.5" viewBox="0 0 20.5 20.5">
-              <path d="M20.5 1.4L19 0l-8.7 8.8-9-8.8L0 1.4l8.8 9L0 19l1.4 1.5 9-8.8 8.7 8.8 1.5-1.4-8.8-8.7"/>
-            </svg>
-          </button>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--catalog">
-              <a class="main-nav__link" href="catalog.html">
-                <span class="main-nav__text main-nav__text--catalog">Каталог товаров</span>
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--order">
-              <a class="main-nav__link" href="form.html">
-                <span class="main-nav__text main-nav__text--order">Вязание на заказ</span>
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-.8 -.8 17.6 17.6">
-                  <path d="M16.5 15L13 11.4c1-1.3 1.6-3 1.6-4.6C14.6 2.5 11.2-1 7-1S-1 2.6-1 7s3.4 7.6 7.7 7.6c1.6 0 3.2-.6 4.5-1.5l3.4 3.5c0 .2.3.3.7.3.6 0 1-.5 1-1 0-.3 0-.6-.2-1zm-15-8c0-3 2.4-5.6 5.4-5.6S12.3 4 12.3 7 10 12.3 7 12.3 1.3 10 1.3 7z"/>
+      <a class="header__logo" href="index.html">
+        <svg class="header__logo-icon" xmlns="http://www.w3.org/2000/svg" width="85.6" height="35" viewBox="32.5 20.2 85.6 35">
+          <path d="M36.6 46.5c0-3.5-.2-7-.3-10.4v-1 .5l2 4c.7 1 1 2.5 1.5 3.8-.2.2-.3.4-.2.6 0 0 0 .2.2.2.5.5 1.5.2 2 0 .3 0 .6-.2.8-.4.3 0 .7-.5.6-1v-.2l.7-3.3c.2-1.2.6-2.3 1-3.5 0 .6 0 1 .2 1.6v6.4c0 .7 0 1.4.2 2 0 .4.3 1.6.2 1.7-.5.5-.4 1 .3 1.2.7.2 1.7 0 2.3-.6 1-1 .5-2.3.3-3.5-.4-2 0-4.2 0-6.2 0-2.3-.5-4.5-.4-6.8 0-1.8.3-3.7-.3-5.4v-.5c.2-1-2.8-.4-3.2.4-.3 0-.5.4-.3.7v.2c-.5 2.6-1.3 5.2-2.2 7.8l-1 3-1.4-3c-1.3-2.7-2.3-5.7-3.7-8.5 0-1.2-2.7-1-3.3 0-.7 1.5-.6 3-.4 4.5.3 1.7.3 3.4.3 5 0 3.5.2 6.8.3 10-.3.5-.4 1 0 1.3 0 .3.2.4.4.6.8.6 3 0 3-1zM54.8 28c0-.5-3.4.2-3.3 1 .3 1.8.2 3.6.2 5.4 0 1.7.4 3.3.6 5 .2 1.7 0 3.5 0 5.2.2.8.7 2.3.2 3-.4.5 1.2.3 1.3.3.6-.2 1.5-.4 2-1 .5-.7 0-2 0-2.8-.3-1.7 0-3.6-.2-5.3 0-1.8-.6-3.4-.6-5 0-2 0-4-.2-6zM58 34.8c1 2.5 4.6 1.3 6.5 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1 1 2.8.2 3.7-.5.6-1.7.6-2.4.6-.6 0-1.8.3-2.3-.3-.8-1.2 0-3.2 0-4.6-.2-.8-3.5 0-3.4 1 .2 2-1.2 5 2 5.4 2 .3 4.3 0 6.3-.8 1-.3 2-.7 2.7-1.5 1-.8.6-2 .4-3-.6-2.4.6-5.2-1-7.4-1.8-2.2-5-.6-7.2-1.2-1.2-.3-1.2-2-1.2-3s0-2.2-.2-3.4c0-.8 0-1.7.6-2.4l.7-.3h1c1.3 0 4 0 3.4 2-.3 1 3 .4 3.2-.5 1-4-6-3-8-2.6-2 .5-4 1.6-4.2 3.7l.3 3c0 1.2-.2 2.4.3 3.5zM72.4 36.7l-.2 5.4c0 1 0 2 .3 2.8 0 .8.4 2 0 2.8 0 .6 3 .2 3.4-.6.3-1.5-.3-3.4-.5-5v-4.3c1.8 0 3.5-.3 5.2 0L81 41l.2 3c0 1 0 2.2-.2 3-.7 1.7 2.6 1.6 3 .3.7-1.6.5-3.6.4-5.2 0-2-.4-4-.4-6 0-3.3-.6-6.4-.6-9.6 0-1.6-3.4-1-3.4.3 0 3 .5 6 .6 9v.3c-1.6 0-3.3 0-5 .2.3-4-.4-7.8-.3-11.7 0-.5-3.2 0-3.3 1 0 3.7.5 7.4.4 11.2zM86.5 42c-.3.3-.2.4 0 .5V47c-.5.6.2 1 .8 1 .7 0 2.3-.4 2.3-1.2.2-1.8.3-3.6.2-5.3 1.4-1.5 2.5-3 3.5-4.8.6 1.3 1.2 2.5 1.6 4 .7 2.2 2 4.3 2.6 6.6.4 1.6 3.7.7 3.3-.8-.8-2.4-2-4.5-2.8-6.8-.8-2.3-2-4.4-3-6.6.8-1.5 1.7-3 2.5-4.8.6-1.5 1.2-3.2 2.5-4.3.5-.5.5-1-.2-1s-1.7.2-2.3.7c-1.3 1-2 2.2-2.7 3.6l-2.5 5v.5c-.6.3-.8.6-.7 1l-2 4c-.3-4.7-1-9.4-1-14 0-1-3.4-.4-3.4.8.3 5.8 1 11.6 1 17.4zM118 35.8c0-.7-1-.7-2-.6v-1c0-2 0-4.4-.2-6.7-.2-2-1.4-2.8-3.4-2.7-2 0-4.4.4-6.3 1.2-2 .8-3.3 2.5-3.7 4.8-.5 2.5.2 5.2.3 7.8v8.8c0 .5 3.3 0 3.3-1v-7c0-.6 0-1.3-.2-2 1.2-.4 3.2 0 4.3.2 1 0 2-.2 2.8-.3 0 2 0 4 .2 6 0 1 .4 3-.3 3.7-.4.4 1.3.3 1.3.3.7-.2 1.5-.4 2-1 .8-.8.3-3 .3-4.2v-4.8c.8 0 2-.7 1.7-1.4zm-6.6-.2c-2 0-4-.3-5.7 0l-.2-3c-.2-2 0-4.8 2-6 .4-.3 1.3-.2 2-.3.7-.2 1.5-.4 2.3 0 1 .8.7 3.2.7 4.2 0 1.7.2 3.4.3 5h-1.4zM51.2 24.3v.9l.5.5c.3.2.7.2 1 .2.5-.2 1-.3 1.3-.6 0 0 .2 0 .2-.2.5-.2.8-.7.6-1-.4-1-.3-2-.3-3 0-.8-.8-1-1.5-1-.6 0-1.8.5-1.8 1.3v2.8zM112.7 53.5c-1.5-.6-3.2-.6-4.8-.8l-5-.5h-5l-5 .4c-6.3.2-12.8.2-19.4 0-6.5 0-13-.4-19.6-.4-3.3 0-6.6 0-10 .3-1.5.2-3 .5-4.8 1-1.6.3-3 .8-4.8 1 1.7.3 3.4.2 5 .2l5 .2c3-.2 6.4-.3 9.6-.3 6.5 0 13 .3 19.6.4 6.5.3 13 .3 19.7 0l5-.2c1.5 0 3-.2 4.7 0l5-.6c1.6-.3 3-.7 4.8-.5V53v.5z"/>
+        </svg>
+      </a>
+
+      <button class="menu-toggle" type="button">
+        <svg class="menu-toggle__icon" xmlns="http://www.w3.org/2000/svg" width="20.5" height="20.5" viewBox="0 0 20.5 20.5">
+          <path d="M20.5 1.4L19 0l-8.7 8.8-9-8.8L0 1.4l8.8 9L0 19l1.4 1.5 9-8.8 8.7 8.8 1.5-1.4-8.8-8.7"/>
+        </svg>
+      </button>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--catalog">
+            <a class="menu__link menu__link--catalog" href="catalog.html">
+              <span class="menu__text menu__text--catalog">Каталог товаров</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--order">
+            <a class="menu__link menu__link--order" href="form.html">
+              <span class="menu__text menu__text--order">Вязание на заказ</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__link menu__link--search" href="#">
+              <svg class="menu__icon menu__icon--search" xmlns="http://www.w3.org/2000/svg" width="20" height="17.6" viewBox="-.8 -.8 17.6 17.6">
+                <path d="M16.5 15L13 11.4c1-1.3 1.6-3 1.6-4.6C14.6 2.5 11.2-1 7-1S-1 2.6-1 7s3.4 7.6 7.7 7.6c1.6 0 3.2-.6 4.5-1.5l3.4 3.5c0 .2.3.3.7.3.6 0 1-.5 1-1 0-.3 0-.6-.2-1zm-15-8c0-3 2.4-5.6 5.4-5.6S12.3 4 12.3 7 10 12.3 7 12.3 1.3 10 1.3 7z"/>
+              </svg>
+              <span class="menu__text menu__text--search">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__link menu__link--cart" href="#">
+              <svg class="menu__icon menu__icon--cart" xmlns="http://www.w3.org/2000/svg" width="20" height="18.8" viewBox="264.2 371 20.3 18.8">
+                <path d="M283.8 378.2h-3.2l-3.4-6.8c-.2-.4-.6-.5-1-.4-.4.2-.5.7-.3 1l3 6.2h-9.2l3-6.2c.2-.3 0-.8-.3-1-.3 0-.8 0-1 .4l-3.4 6.8h-3c-.5 0-.8.3-.8.7s.3.7.8.7l1 3c-.2 0-.3.3-.3.6 0 .4.3.7.7.7l1.6 5.8h12.7l1.7-5.8c.3 0 .7-.3.7-.7 0-.3 0-.5-.3-.6l1-3c.5 0 .8-.3.8-.8s-.3-.8-.8-.8zm-4.2 10H269l-1-4.2h12.8l-1.2 4.3zm1.6-5.7h-13.7l-.8-2.8H282l-.8 2.8z"/>
+              </svg>
+              <span class="menu__text menu__text--cart">Корзина: <span class="menu__cart-status">пока пуста</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--new">
+            <a class="menu__link menu__link--new" href="#">
+              <span class="menu__text menu__text--new">Новые поступления</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--sale">
+            <a class="menu__link menu__link--sale" href="#">
+              <span class="menu__text menu__text--sale">Распродажа</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <span class="header__delivery">Бесплатная доставка по России</span>
+
+      <div class="header__title header__title--form">
+        <h1 class="header__text">Вязание на заказ</h1>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <section class="invite">
+        <p class="invite__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </section>
+
+      <section class="questionary">
+
+        <form class="questionary__form" action="https://echo.htmlacademy.ru" method="get">
+
+          <fieldset class="fieldset fieldset--type">
+            <legend class="fieldset__title fieldset__title--type">Тип</legend>
+            <div class="fieldset__list fieldset__list--type">
+              <div class="fieldset__item fieldset__item--type">
+                <input class="fieldset__input fieldset__input--type" type="radio" id="type-interior" name="type" value="interior">
+                <label class="fieldset__label fieldset__label--type" for="type-interior">Аксессуар для интерьера</label>
+              </div>
+              <div class="fieldset__item fieldset__item--type">
+                <input class="fieldset__input fieldset__input--type" type="radio" id="type-toy" name="type" value="toy">
+                <label class="fieldset__label fieldset__label--type" for="type-toy">Детская игрушка</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset fieldset--color">
+            <legend class="fieldset__title fieldset__title--color">Цвет</legend>
+            <div class="fieldset__list fieldset__list--color">
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-white" name="white">
+                <label class="fieldset__label fieldset__label--color" for="color-white">Белый</label>
+              </div>
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-gray" name="gray">
+                <label class="fieldset__label fieldset__label--color" for="color-gray">Серый</label>
+              </div>
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-tiffany" name="tiffany">
+                <label class="fieldset__label fieldset__label--color" for="color-tiffany">«Тиффани»</label>
+              </div>
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-black" name="black">
+                <label class="fieldset__label fieldset__label--color" for="color-black">Черный</label>
+              </div>
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-pink" name="pink">
+                <label class="fieldset__label fieldset__label--color" for="color-pink">Розовый</label>
+              </div>
+              <div class="fieldset__item fieldset__item--color">
+                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-orange" name="orange">
+                <label class="fieldset__label fieldset__label--color" for="color-orange">Оранжевый</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset fieldset--name">
+            <legend class="fieldset__title fieldset__title--name">ФИО</legend>
+            <div class="fieldset__list fieldset__list--name">
+              <div class="fieldset__item fieldset__item--name">
+                <label class="fieldset__label fieldset__label--name" for="name-first">Имя:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="name-first" name="first-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="fieldset__item fieldset__item--name">
+                <label class="fieldset__label fieldset__label--name" for="name-last">Фамилия:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="name-last" name="last-name" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="fieldset__item fieldset__item--name">
+                <label class="fieldset__label fieldset__label--name" for="name-patronymic">Отчество:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="name-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset fieldset--phone">
+            <legend class="fieldset__title fieldset__title--phone">Тел</legend>
+            <div class="fieldset__list fieldset__list--phone">
+              <div class="fieldset__item fieldset__item--phone">
+                <input class="fieldset__input fieldset__input--phone" type="tel" name="phone" pattern="\+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+                <svg class="fieldset__icon fieldset__icon--phone" xmlns="http://www.w3.org/2000/svg" width="32" height="24.3" viewBox="0 0 24.8 24.3">
+                  <path d="M17.3 24.3h-1c-5-.5-8.6-2.8-11.2-5.7C2.7 15.6.6 12 0 6.8V5.5c0-1 .5-1.6 1-2 .7-.8 1.7-1.6 2.6-1.7.6 0 1.8.5 2.2 1 .4.6.6 1.7.8 2.5.2.8.6 2 .5 2.7 0 1.2-1.6 1.7-2 2.6 1.6 3.7 4 6.4 7.5 8.3 1-.7 1.6-2 2.8-2l1.5.2 1.3.5c.8.3 2 .7 2.5 1.2.4.6.7 1.6.6 2.2 0 1.2-2.2 2.6-3.4 3zM12.5 1.5c6 0 10.8 4.8 10.8 10.8h1.5C24.8 5.5 19.3 0 12.5 0v1.5zm0 7.8V11c.8 0 1.4.5 1.4 1.3h1.4c0-1.6-1.3-3-3-3zm0-3c3.4 0 6 2.7 6 6h1.7c0-4-3.4-7.6-7.7-7.6v1.5z"/>
                 </svg>
-                <span class="main-nav__text main-nav__text--search">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--cart">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" width="20.3" height="18.8" viewBox="264.2 371 20.3 18.8">
-                  <path d="M283.8 378.2h-3.2l-3.4-6.8c-.2-.4-.6-.5-1-.4-.4.2-.5.7-.3 1l3 6.2h-9.2l3-6.2c.2-.3 0-.8-.3-1-.3 0-.8 0-1 .4l-3.4 6.8h-3c-.5 0-.8.3-.8.7s.3.7.8.7l1 3c-.2 0-.3.3-.3.6 0 .4.3.7.7.7l1.6 5.8h12.7l1.7-5.8c.3 0 .7-.3.7-.7 0-.3 0-.5-.3-.6l1-3c.5 0 .8-.3.8-.8s-.3-.8-.8-.8zm-4.2 10H269l-1-4.2h12.8l-1.2 4.3zm1.6-5.7h-13.7l-.8-2.8H282l-.8 2.8z"/>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset fieldset--email">
+            <legend class="fieldset__title fieldset__title--email">E-mail</legend>
+            <div class="fieldset__list fieldset__list--email">
+              <div class="fieldset__item fieldset__item--email">
+                <input class="fieldset__input fieldset__input--email" type="email" name="email" placeholder="Ваш Email*" required>
+                <svg class="fieldset__icon fieldset__icon--email" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <path d="M28 5H4C1.8 5 0 6.8 0 9v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V9c0-2.2-1.8-4-4-4zM2 10.3l7 5.2-7 5.3V10.2zM30 22c0 1-1 2-2 2H4c-1 0-2-1-2-2l7.8-6 4.4 3.4c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3 7.8 6zm0-1.3l-7-5.2 7-5.3V21zm-12.8-2L16 19s-1 0-1.2-.4l-4-3-1-.7L2 9c0-1 1-2 2-2h24c1 0 2 1 2 2l-12.8 9.6z"/>
                 </svg>
-                <span class="main-nav__text main-nav__text--cart">Корзина: <span class="main-nav__cart-status">пока пуста</span></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="extra-nav">
-          <ul class="extra-nav__list">
-            <li class="extra-nav__item">
-              <a href="" class="extra-nav__link">
-                <span class="extra-nav__text">Новые поступления</span>
-              </a>
-            </li>
-            <li class="extra-nav__item">
-              <a href="" class="extra-nav__link">
-                <span class="extra-nav__text">Распродажа</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <span class="page-header__delivery-info">Бесплатная доставка по России</span>
-        <div class="page-header__title page-header__title--form">
-          <h1 class="page-header__text">Вязание на заказ</h1>
-          <div class="page-header__decor"></div>
-        </div>
-      </header>
-
-
-      <main class="page-main">
-
-
-        <section class="invite">
-          <p class="invite__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        </section>
-
-
-        <section class="order">
-          <form class="info" action="https://echo.htmlacademy.ru" method="get">
-
-            <fieldset class="field-group">
-              <legend class="field-group__name">Тип</legend>
-              <div class="field__container">
-                <div class="field field--type">
-                  <input class="field__check field__check--radio" type="radio" id="type-interior" name="type" value="interior">
-                  <label class="field__subtitle" for="type-interior">Аксессуар для интерьера</label>
-                </div>
-                <div class="field field--type">
-                  <input class="field__check field__check--radio" type="radio" id="type-toy" name="type" value="toy">
-                  <label class="field__subtitle" for="type-toy">Детская игрушка</label>
-                </div>
               </div>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="field-group">
-              <legend class="field-group__name">Цвет</legend>
-              <div class="field__container">
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-white" name="white">
-                  <label class="field__subtitle" for="color-white">Белый</label>
-                </div>
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-gray" name="gray">
-                  <label class="field__subtitle" for="color-gray">Серый</label>
-                </div>
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-tiffany" name="tiffany">
-                  <label class="field__subtitle" for="color-tiffany">«Тиффани»</label>
-                </div>
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-black" name="black">
-                  <label class="field__subtitle" for="color-black">Черный</label>
-                </div>
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-pink" name="pink">
-                  <label class="field__subtitle" for="color-pink">Розовый</label>
-                </div>
-                <div class="field field--color">
-                  <input class="field__check field__check--box" type="checkbox" id="color-orange" name="orange">
-                  <label class="field__subtitle" for="color-orange">Оранжевый</label>
-                </div>
+          <fieldset class="fieldset fieldset--message">
+            <legend class="fieldset__title fieldset__title--message">Доп</legend>
+            <div class="fieldset__list fieldset__list--message">
+              <div class="fieldset__item fieldset__item--message">
+                <textarea class="fieldset__input fieldset__input--message" name="message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="field-group">
-              <legend class="field-group__name">ФИО</legend>
-              <div class="field__container">
-                <div class="field field--data-input">
-                  <label class="field__subtitle field__subtitle--top" for="name-first">Имя:</label>
-                  <input class="field__text field__text--name" type="text" id="name-first" name="first-name" placeholder="Введите ваше имя*" required>
-                </div>
-                <div class="field field--data-input">
-                  <label class="field__subtitle field__subtitle--top" for="name-last">Фамилия:</label>
-                  <input class="field__text field__text--name" type="text" id="name-last" name="last-name" placeholder="Укажите фамилию*" required>
-                </div>
-                <div class="field field--data-input">
-                  <label class="field__subtitle field__subtitle--top" for="name-patronymic">Отчество:</label>
-                  <input class="field__text field__text--name" type="text" id="name-patronymic" name="patronymic" placeholder="Отчество, если желаете">
-                </div>
-              </div>
-            </fieldset>
+          <p class="questionary__note">*Поля обязательны для заполнения</p>
 
-            <fieldset class="field-group field-group--phone">
-              <legend class="field-group__name">Тел</legend>
-              <div class="field__container">
-                <div class="field field--data-input">
-                  <input class="field__text" type="tel" name="phone" pattern="\+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
-                  <svg class="field__icon" xmlns="http://www.w3.org/2000/svg" width="24.8" height="24.3" viewBox="0 0 24.8 24.3">
-                    <path d="M17.3 24.3h-1c-5-.5-8.6-2.8-11.2-5.7C2.7 15.6.6 12 0 6.8V5.5c0-1 .5-1.6 1-2 .7-.8 1.7-1.6 2.6-1.7.6 0 1.8.5 2.2 1 .4.6.6 1.7.8 2.5.2.8.6 2 .5 2.7 0 1.2-1.6 1.7-2 2.6 1.6 3.7 4 6.4 7.5 8.3 1-.7 1.6-2 2.8-2l1.5.2 1.3.5c.8.3 2 .7 2.5 1.2.4.6.7 1.6.6 2.2 0 1.2-2.2 2.6-3.4 3zM12.5 1.5c6 0 10.8 4.8 10.8 10.8h1.5C24.8 5.5 19.3 0 12.5 0v1.5zm0 7.8V11c.8 0 1.4.5 1.4 1.3h1.4c0-1.6-1.3-3-3-3zm0-3c3.4 0 6 2.7 6 6h1.7c0-4-3.4-7.6-7.7-7.6v1.5z"/>
-                  </svg>
-                </div>
-              </div>
-            </fieldset>
+          <input class="button" type="submit" value="Отправить заказ">
 
-            <fieldset class="field-group field-group--mail">
-              <legend class="field-group__name">E-mail</legend>
-              <div class="field__container">
-                <div class="field field--data-input">
-                  <input class="field__text" type="email" name="email" placeholder="Ваш Email*" required>
-                  <svg class="field__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <path d="M28 5H4C1.8 5 0 6.8 0 9v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V9c0-2.2-1.8-4-4-4zM2 10.3l7 5.2-7 5.3V10.2zM30 22c0 1-1 2-2 2H4c-1 0-2-1-2-2l7.8-6 4.4 3.4c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3 7.8 6zm0-1.3l-7-5.2 7-5.3V21zm-12.8-2L16 19s-1 0-1.2-.4l-4-3-1-.7L2 9c0-1 1-2 2-2h24c1 0 2 1 2 2l-12.8 9.6z"/>
-                  </svg>
-                </div>
-              </div>
-            </fieldset>
+        </form>
 
-            <fieldset class="field-group field-group--message">
-              <legend class="field-group__name">Доп</legend>
-              <div class="field__container">
-                <div class="field field--data-input">
-                  <textarea class="field__message" name="message" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-                </div>
-              </div>
-            </fieldset>
+      </section>
 
-            <p class="info__note">*Поля обязательны для заполнения</p>
-
-            <input class="button" type="submit" value="Отправить заказ">
-          </form>
-        </section>
-
-      </main>
+    </main>
 
 
-      <footer class="page-footer">
-        <a class="page-footer__link" href="index.html">
-          <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" width="100" height="35" viewBox="32.5 20.2 85.6 35">
-            <path d="M36.6 46.5c0-3.5-.2-7-.3-10.4v-1 .5l2 4c.7 1 1 2.5 1.5 3.8-.2.2-.3.4-.2.6 0 0 0 .2.2.2.5.5 1.5.2 2 0 .3 0 .6-.2.8-.4.3 0 .7-.5.6-1v-.2l.7-3.3c.2-1.2.6-2.3 1-3.5 0 .6 0 1 .2 1.6v6.4c0 .7 0 1.4.2 2 0 .4.3 1.6.2 1.7-.5.5-.4 1 .3 1.2.7.2 1.7 0 2.3-.6 1-1 .5-2.3.3-3.5-.4-2 0-4.2 0-6.2 0-2.3-.5-4.5-.4-6.8 0-1.8.3-3.7-.3-5.4v-.5c.2-1-2.8-.4-3.2.4-.3 0-.5.4-.3.7v.2c-.5 2.6-1.3 5.2-2.2 7.8l-1 3-1.4-3c-1.3-2.7-2.3-5.7-3.7-8.5 0-1.2-2.7-1-3.3 0-.7 1.5-.6 3-.4 4.5.3 1.7.3 3.4.3 5 0 3.5.2 6.8.3 10-.3.5-.4 1 0 1.3 0 .3.2.4.4.6.8.6 3 0 3-1zM54.8 28c0-.5-3.4.2-3.3 1 .3 1.8.2 3.6.2 5.4 0 1.7.4 3.3.6 5 .2 1.7 0 3.5 0 5.2.2.8.7 2.3.2 3-.4.5 1.2.3 1.3.3.6-.2 1.5-.4 2-1 .5-.7 0-2 0-2.8-.3-1.7 0-3.6-.2-5.3 0-1.8-.6-3.4-.6-5 0-2 0-4-.2-6zM58 34.8c1 2.5 4.6 1.3 6.5 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1 1 2.8.2 3.7-.5.6-1.7.6-2.4.6-.6 0-1.8.3-2.3-.3-.8-1.2 0-3.2 0-4.6-.2-.8-3.5 0-3.4 1 .2 2-1.2 5 2 5.4 2 .3 4.3 0 6.3-.8 1-.3 2-.7 2.7-1.5 1-.8.6-2 .4-3-.6-2.4.6-5.2-1-7.4-1.8-2.2-5-.6-7.2-1.2-1.2-.3-1.2-2-1.2-3s0-2.2-.2-3.4c0-.8 0-1.7.6-2.4l.7-.3h1c1.3 0 4 0 3.4 2-.3 1 3 .4 3.2-.5 1-4-6-3-8-2.6-2 .5-4 1.6-4.2 3.7l.3 3c0 1.2-.2 2.4.3 3.5zM72.4 36.7l-.2 5.4c0 1 0 2 .3 2.8 0 .8.4 2 0 2.8 0 .6 3 .2 3.4-.6.3-1.5-.3-3.4-.5-5v-4.3c1.8 0 3.5-.3 5.2 0L81 41l.2 3c0 1 0 2.2-.2 3-.7 1.7 2.6 1.6 3 .3.7-1.6.5-3.6.4-5.2 0-2-.4-4-.4-6 0-3.3-.6-6.4-.6-9.6 0-1.6-3.4-1-3.4.3 0 3 .5 6 .6 9v.3c-1.6 0-3.3 0-5 .2.3-4-.4-7.8-.3-11.7 0-.5-3.2 0-3.3 1 0 3.7.5 7.4.4 11.2zM86.5 42c-.3.3-.2.4 0 .5V47c-.5.6.2 1 .8 1 .7 0 2.3-.4 2.3-1.2.2-1.8.3-3.6.2-5.3 1.4-1.5 2.5-3 3.5-4.8.6 1.3 1.2 2.5 1.6 4 .7 2.2 2 4.3 2.6 6.6.4 1.6 3.7.7 3.3-.8-.8-2.4-2-4.5-2.8-6.8-.8-2.3-2-4.4-3-6.6.8-1.5 1.7-3 2.5-4.8.6-1.5 1.2-3.2 2.5-4.3.5-.5.5-1-.2-1s-1.7.2-2.3.7c-1.3 1-2 2.2-2.7 3.6l-2.5 5v.5c-.6.3-.8.6-.7 1l-2 4c-.3-4.7-1-9.4-1-14 0-1-3.4-.4-3.4.8.3 5.8 1 11.6 1 17.4zM118 35.8c0-.7-1-.7-2-.6v-1c0-2 0-4.4-.2-6.7-.2-2-1.4-2.8-3.4-2.7-2 0-4.4.4-6.3 1.2-2 .8-3.3 2.5-3.7 4.8-.5 2.5.2 5.2.3 7.8v8.8c0 .5 3.3 0 3.3-1v-7c0-.6 0-1.3-.2-2 1.2-.4 3.2 0 4.3.2 1 0 2-.2 2.8-.3 0 2 0 4 .2 6 0 1 .4 3-.3 3.7-.4.4 1.3.3 1.3.3.7-.2 1.5-.4 2-1 .8-.8.3-3 .3-4.2v-4.8c.8 0 2-.7 1.7-1.4zm-6.6-.2c-2 0-4-.3-5.7 0l-.2-3c-.2-2 0-4.8 2-6 .4-.3 1.3-.2 2-.3.7-.2 1.5-.4 2.3 0 1 .8.7 3.2.7 4.2 0 1.7.2 3.4.3 5h-1.4zM51.2 24.3v.9l.5.5c.3.2.7.2 1 .2.5-.2 1-.3 1.3-.6 0 0 .2 0 .2-.2.5-.2.8-.7.6-1-.4-1-.3-2-.3-3 0-.8-.8-1-1.5-1-.6 0-1.8.5-1.8 1.3v2.8zM112.7 53.5c-1.5-.6-3.2-.6-4.8-.8l-5-.5h-5l-5 .4c-6.3.2-12.8.2-19.4 0-6.5 0-13-.4-19.6-.4-3.3 0-6.6 0-10 .3-1.5.2-3 .5-4.8 1-1.6.3-3 .8-4.8 1 1.7.3 3.4.2 5 .2l5 .2c3-.2 6.4-.3 9.6-.3 6.5 0 13 .3 19.6.4 6.5.3 13 .3 19.7 0l5-.2c1.5 0 3-.2 4.7 0l5-.6c1.6-.3 3-.7 4.8-.5V53v.5z"/>
+    <footer class="footer">
+
+      <a class="footer__link" href="index.html">
+        <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" width="100" height="35" viewBox="32.5 20.2 85.6 35">
+          <path d="M36.6 46.5c0-3.5-.2-7-.3-10.4v-1 .5l2 4c.7 1 1 2.5 1.5 3.8-.2.2-.3.4-.2.6 0 0 0 .2.2.2.5.5 1.5.2 2 0 .3 0 .6-.2.8-.4.3 0 .7-.5.6-1v-.2l.7-3.3c.2-1.2.6-2.3 1-3.5 0 .6 0 1 .2 1.6v6.4c0 .7 0 1.4.2 2 0 .4.3 1.6.2 1.7-.5.5-.4 1 .3 1.2.7.2 1.7 0 2.3-.6 1-1 .5-2.3.3-3.5-.4-2 0-4.2 0-6.2 0-2.3-.5-4.5-.4-6.8 0-1.8.3-3.7-.3-5.4v-.5c.2-1-2.8-.4-3.2.4-.3 0-.5.4-.3.7v.2c-.5 2.6-1.3 5.2-2.2 7.8l-1 3-1.4-3c-1.3-2.7-2.3-5.7-3.7-8.5 0-1.2-2.7-1-3.3 0-.7 1.5-.6 3-.4 4.5.3 1.7.3 3.4.3 5 0 3.5.2 6.8.3 10-.3.5-.4 1 0 1.3 0 .3.2.4.4.6.8.6 3 0 3-1zM54.8 28c0-.5-3.4.2-3.3 1 .3 1.8.2 3.6.2 5.4 0 1.7.4 3.3.6 5 .2 1.7 0 3.5 0 5.2.2.8.7 2.3.2 3-.4.5 1.2.3 1.3.3.6-.2 1.5-.4 2-1 .5-.7 0-2 0-2.8-.3-1.7 0-3.6-.2-5.3 0-1.8-.6-3.4-.6-5 0-2 0-4-.2-6zM58 34.8c1 2.5 4.6 1.3 6.5 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1 1 2.8.2 3.7-.5.6-1.7.6-2.4.6-.6 0-1.8.3-2.3-.3-.8-1.2 0-3.2 0-4.6-.2-.8-3.5 0-3.4 1 .2 2-1.2 5 2 5.4 2 .3 4.3 0 6.3-.8 1-.3 2-.7 2.7-1.5 1-.8.6-2 .4-3-.6-2.4.6-5.2-1-7.4-1.8-2.2-5-.6-7.2-1.2-1.2-.3-1.2-2-1.2-3s0-2.2-.2-3.4c0-.8 0-1.7.6-2.4l.7-.3h1c1.3 0 4 0 3.4 2-.3 1 3 .4 3.2-.5 1-4-6-3-8-2.6-2 .5-4 1.6-4.2 3.7l.3 3c0 1.2-.2 2.4.3 3.5zM72.4 36.7l-.2 5.4c0 1 0 2 .3 2.8 0 .8.4 2 0 2.8 0 .6 3 .2 3.4-.6.3-1.5-.3-3.4-.5-5v-4.3c1.8 0 3.5-.3 5.2 0L81 41l.2 3c0 1 0 2.2-.2 3-.7 1.7 2.6 1.6 3 .3.7-1.6.5-3.6.4-5.2 0-2-.4-4-.4-6 0-3.3-.6-6.4-.6-9.6 0-1.6-3.4-1-3.4.3 0 3 .5 6 .6 9v.3c-1.6 0-3.3 0-5 .2.3-4-.4-7.8-.3-11.7 0-.5-3.2 0-3.3 1 0 3.7.5 7.4.4 11.2zM86.5 42c-.3.3-.2.4 0 .5V47c-.5.6.2 1 .8 1 .7 0 2.3-.4 2.3-1.2.2-1.8.3-3.6.2-5.3 1.4-1.5 2.5-3 3.5-4.8.6 1.3 1.2 2.5 1.6 4 .7 2.2 2 4.3 2.6 6.6.4 1.6 3.7.7 3.3-.8-.8-2.4-2-4.5-2.8-6.8-.8-2.3-2-4.4-3-6.6.8-1.5 1.7-3 2.5-4.8.6-1.5 1.2-3.2 2.5-4.3.5-.5.5-1-.2-1s-1.7.2-2.3.7c-1.3 1-2 2.2-2.7 3.6l-2.5 5v.5c-.6.3-.8.6-.7 1l-2 4c-.3-4.7-1-9.4-1-14 0-1-3.4-.4-3.4.8.3 5.8 1 11.6 1 17.4zM118 35.8c0-.7-1-.7-2-.6v-1c0-2 0-4.4-.2-6.7-.2-2-1.4-2.8-3.4-2.7-2 0-4.4.4-6.3 1.2-2 .8-3.3 2.5-3.7 4.8-.5 2.5.2 5.2.3 7.8v8.8c0 .5 3.3 0 3.3-1v-7c0-.6 0-1.3-.2-2 1.2-.4 3.2 0 4.3.2 1 0 2-.2 2.8-.3 0 2 0 4 .2 6 0 1 .4 3-.3 3.7-.4.4 1.3.3 1.3.3.7-.2 1.5-.4 2-1 .8-.8.3-3 .3-4.2v-4.8c.8 0 2-.7 1.7-1.4zm-6.6-.2c-2 0-4-.3-5.7 0l-.2-3c-.2-2 0-4.8 2-6 .4-.3 1.3-.2 2-.3.7-.2 1.5-.4 2.3 0 1 .8.7 3.2.7 4.2 0 1.7.2 3.4.3 5h-1.4zM51.2 24.3v.9l.5.5c.3.2.7.2 1 .2.5-.2 1-.3 1.3-.6 0 0 .2 0 .2-.2.5-.2.8-.7.6-1-.4-1-.3-2-.3-3 0-.8-.8-1-1.5-1-.6 0-1.8.5-1.8 1.3v2.8zM112.7 53.5c-1.5-.6-3.2-.6-4.8-.8l-5-.5h-5l-5 .4c-6.3.2-12.8.2-19.4 0-6.5 0-13-.4-19.6-.4-3.3 0-6.6 0-10 .3-1.5.2-3 .5-4.8 1-1.6.3-3 .8-4.8 1 1.7.3 3.4.2 5 .2l5 .2c3-.2 6.4-.3 9.6-.3 6.5 0 13 .3 19.6.4 6.5.3 13 .3 19.7 0l5-.2c1.5 0 3-.2 4.7 0l5-.6c1.6-.3 3-.7 4.8-.5V53v.5z"/>
+        </svg>
+      </a>
+
+      <div class="social">
+        <!-- instagram logo -->
+        <a class="social__link" href="#">
+          <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="21.8" height="21.3" viewBox="53.1 53.2 21.8 21.3">
+            <path d="M75 65.3c0-2.4-.5-4.8-.4-7 0-1 0-1.6-.2-2.4v-1c-.4-.3-.3-.8-.6-1-.4-.2-1.2 0-1.7-.2h-1.8c-2-.2-4-.2-6-.2s-4-.2-5.7-.4h-2.2-.2c-.5 0-1 .3-1.5.4l-.7.3c-.2 0-.5 0-.6.3-.2.2.2.4 0 .6v2.6c0 1.3.2 2.4 0 3.7.6 2.8.5 6.6.2 9.4.2.6.4 1 .5 1.8 0 .5.2 1 .5 1.5.5.2 1.3.2 2 .2.3 0 .6.3 1 .3 3-.2 5.6 0 8.5-.2 2.7.2 5.8.2 8.3-.2.2 0 0-.5.2-.7 0-.4.2-.4.2-.7.2-2.4.2-4.8.2-7.3zM62 59l2.3-.2c.7 0 1.3.3 2 .5 0 0-.3.5 0 .6h.2c.5 0 .8.3 1 .5.5 0 .6.5 1.2.3v.8c.3 1.2.4 2.8.3 4.3-.2 0-.3.3-.3.5-.4.4-.5.8-1 1 0 .3 0 .5-.3.6-.2.4-.2.6-.5.7h-1c-.4 0-.8.2-1 .5-1 0-1.8-.2-2.6-.3-.2-.2-.5-.4-.8-.4l-.8-.5h-.5c-.2 0-.2-.3-.5-.3 0-.4-.4-.6-.5-1l-.4-1.3c-.2-1.4 0-2.7.2-3.8l1.2-1.7c.2 0 .3-.2.4-.4h.6c.3 0 .3-.3.5-.5zM60 56.5v-1c0-.4.2-.4.3-.6h-.2c0-.2.7-.2.8 0 .3.4-.2.4-.4.6 0 .2.3 0 .5 0v2.3h-.4c0 .2.2.2.5.2 0 .2.2.3 0 .5 0 .2-.6 0-1 0 0-.5.3-1.3.2-2zm-.7-1.6h.2c.2.3 0 .7 0 1-.3-.2 0-.7-.2-1zm.2 1.8l-.2-.4c.2 0 .2.2.2.4zm0 1.4v-.2.2zm-.2.2c.2 0 0 .2.3.2 0 .2-.3.2-.4 0v-.2zM57.2 57v-.2c-.2-.8 0-1.5 0-2 .2-.2.7 0 1 0v1H58c-.2.4.2.3.3.4v2.5H57c0-.6 0-1.4.5-1.6h-.3zm-.5 0c-.2 0-.3-.5 0-.6.2 0 0 .5 0 .6zm-.2 1v-.7c.3 0 .3.8 0 .7zm.2-2c-.2 0-.2-.3 0-.5 0 0 .2.3 0 .4zm0-1.2v.3h-.3c0-.2.2-.2.3-.2zm-.2 3.7c.2 0 0 .4 0 .2v-.2zm-.7-3.7c0 .2-.4.3-.4 0h.4zm-1 0c0 .3-.3.2-.3.4-.3 0 0-.4.3-.3zm-.4.8l.7-.6v-.2h.4c0 .4-.3.3-.3.5v1.2c-.2 0-.2.3-.5.3 0-.5-.2-.7 0-1.2zm0 3.3v-1.7l.7-.5c.4.4.2 1.3.5 2h-1zm18.3 11c0 1-.2 2-.4 2.8h-9c0 .2-.2 0 0 0h-.6c.2-.2.4-.8 0-1.2-.7 0-.7 1-1 1.3h-2c.3-.7 1-1 1-1.7-.3-.6-1 0-1.2.4l-.7 1.3h-1l.8-1.4c0-.5.6-.7.6-1.3 0-.3-.4 0-.6 0l-.4.5-.7 1c-.2.4-.3 0-.5.4-.4.2-.6.7-1 1-.2 0 0-.4 0-.4.2-.2 0-.6.2-.6 0-.4.2-.7.4-1 0-.7.5-1 .7-1.8-.6 0-.7.6-1 1-.2.4-.6.7-.7 1.2-.2 0 0-.5 0-.8 0-.6.2-1 .3-1.7v-.8c.3-.2.2-.6 0-.7-.2 0-.3 0-.4.3-.2 0-.2.5-.3.3 0-2.5-.5-4.7-.5-7.4 0-.3 0-.4-.2-.7 1.6 0 3 0 4.8.2l-.3.4-.3.3c-.6 1.5-1 3.8-.6 6l1 1.5c1 .4 1.7 1 2.6 1.6 1.7.5 3.8.5 5.5 0 .4 0 .6 0 .8-.3 1.4-1.2 2.8-2.4 3-4.8v-1.5c-.2-1.6-.7-3-1.8-3.6.4-.3 1 0 1.7 0H72.8c.2 0 0 .5.3.7v6.5c0 1 0 2-.3 2.8zm.4-11.2c-.6 0-1.2-.3-1.8-.4 0-.3.8 0 1-.2.3-.2.2-1 .3-1.5v-1c-.4-1-1.8-.5-3-.5 0 .7-.3 1.8-.2 2.6.2.5 1 .3 1.6.5-.3.3-.8 0-1 0h-7.6v-3.6h3c-.4.4-1 .5-1.3 1-.3 0-.8.4-1 .8l.7-.4c.4 0 .5-.3 1-.4.3-.4 1-.6 1.5-1 .4 0 .7 0 1 .2H71c.6.2 1.5 0 2 .4l.3 1-.2 2.6zM67.3 55zm0 0c-.5.2-1 .4-1.4.8.5-.2 1-.3 1.4-.7zm1 .7c.2 0 0 0 0 0zm-1.7 1c.8-.3 1.2-.7 1.8-1-.5 0-.6.3-1 .4-.2.3-.6.3-.8.6zm-.7-1s0 .2 0 0zm-.6.7zm0 0zm-.2 0zm-.8.7c.3 0 .6-.2.8-.5l-.8.6zm2.3 1c.5 0 .7-.3 1.2-.4.3-.3.8-.4 1-.8-.6 0-.8.4-1.3.6-.2.3-.7.4-1 .7zm-2.3-1c-.3 0 0 .4 0 0zm-.6.5s.2 0 0 0zm3 .6c-.3.2 0 .2 0 0zm-1.3 2c-.2-.3-.7-.3-1-.4-.7 0-1.2 0-1.7.2-.3 0-.6.3-1 .5-.2 0-.4.4-.7.5-.3.2-.4.5-.8.6 0 .2 0 .3-.3.4-.2 0-.2.3-.3.3v.5c0 1.5.2 3 .6 4 .3.8 1 1 1.4 1.4.6.2 1.4.4 2.2.4h.8c1.2-.2 2-.8 2.8-1.5 0-.3.2-.6.4-.8-.2-.6.3-1 .5-1.5 0-1.4-.2-2.5-.6-3.5-.4-.5-1-.7-1.5-1V60c-.4 0-1-.2-1.2 0zM62 64.2c-.2 0-.2-.3-.3-.4.3-.2.2 0 .2.3zm0 .3c0 .2 0 0 0 0zm.4-2c0-.2 0 0 0 0zm1.7-2.2c0 .3 0 .6.2.8-.3 0-.6-.8 0-.8zm.5 4zm.7 2.8h0zm2.2-2.5c-.2 0 0 .2-.3 0l.3-.3s.2 0 0 .3zm-1-3.8s.3 0 .5.2c0 .3.2.4.3.6 0 .7.2 1.5 0 2.3 0 .2-.3.4-.5.5-.8 0-1.4-.2-2-.5 0-.2-.3-.5-.5-.7v-1l.5-.7c.2 0 .5-.2.4-.6v-.2s.2 0 .3.2c.4 0 .5-.2.8 0z"/>
           </svg>
         </a>
-        <div class="social">
-          <!-- instagram logo -->
-          <a class="social__link" href="#">
-            <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="21.8" height="21.3" viewBox="53.1 53.2 21.8 21.3">
-              <path d="M75 65.3c0-2.4-.5-4.8-.4-7 0-1 0-1.6-.2-2.4v-1c-.4-.3-.3-.8-.6-1-.4-.2-1.2 0-1.7-.2h-1.8c-2-.2-4-.2-6-.2s-4-.2-5.7-.4h-2.2-.2c-.5 0-1 .3-1.5.4l-.7.3c-.2 0-.5 0-.6.3-.2.2.2.4 0 .6v2.6c0 1.3.2 2.4 0 3.7.6 2.8.5 6.6.2 9.4.2.6.4 1 .5 1.8 0 .5.2 1 .5 1.5.5.2 1.3.2 2 .2.3 0 .6.3 1 .3 3-.2 5.6 0 8.5-.2 2.7.2 5.8.2 8.3-.2.2 0 0-.5.2-.7 0-.4.2-.4.2-.7.2-2.4.2-4.8.2-7.3zM62 59l2.3-.2c.7 0 1.3.3 2 .5 0 0-.3.5 0 .6h.2c.5 0 .8.3 1 .5.5 0 .6.5 1.2.3v.8c.3 1.2.4 2.8.3 4.3-.2 0-.3.3-.3.5-.4.4-.5.8-1 1 0 .3 0 .5-.3.6-.2.4-.2.6-.5.7h-1c-.4 0-.8.2-1 .5-1 0-1.8-.2-2.6-.3-.2-.2-.5-.4-.8-.4l-.8-.5h-.5c-.2 0-.2-.3-.5-.3 0-.4-.4-.6-.5-1l-.4-1.3c-.2-1.4 0-2.7.2-3.8l1.2-1.7c.2 0 .3-.2.4-.4h.6c.3 0 .3-.3.5-.5zM60 56.5v-1c0-.4.2-.4.3-.6h-.2c0-.2.7-.2.8 0 .3.4-.2.4-.4.6 0 .2.3 0 .5 0v2.3h-.4c0 .2.2.2.5.2 0 .2.2.3 0 .5 0 .2-.6 0-1 0 0-.5.3-1.3.2-2zm-.7-1.6h.2c.2.3 0 .7 0 1-.3-.2 0-.7-.2-1zm.2 1.8l-.2-.4c.2 0 .2.2.2.4zm0 1.4v-.2.2zm-.2.2c.2 0 0 .2.3.2 0 .2-.3.2-.4 0v-.2zM57.2 57v-.2c-.2-.8 0-1.5 0-2 .2-.2.7 0 1 0v1H58c-.2.4.2.3.3.4v2.5H57c0-.6 0-1.4.5-1.6h-.3zm-.5 0c-.2 0-.3-.5 0-.6.2 0 0 .5 0 .6zm-.2 1v-.7c.3 0 .3.8 0 .7zm.2-2c-.2 0-.2-.3 0-.5 0 0 .2.3 0 .4zm0-1.2v.3h-.3c0-.2.2-.2.3-.2zm-.2 3.7c.2 0 0 .4 0 .2v-.2zm-.7-3.7c0 .2-.4.3-.4 0h.4zm-1 0c0 .3-.3.2-.3.4-.3 0 0-.4.3-.3zm-.4.8l.7-.6v-.2h.4c0 .4-.3.3-.3.5v1.2c-.2 0-.2.3-.5.3 0-.5-.2-.7 0-1.2zm0 3.3v-1.7l.7-.5c.4.4.2 1.3.5 2h-1zm18.3 11c0 1-.2 2-.4 2.8h-9c0 .2-.2 0 0 0h-.6c.2-.2.4-.8 0-1.2-.7 0-.7 1-1 1.3h-2c.3-.7 1-1 1-1.7-.3-.6-1 0-1.2.4l-.7 1.3h-1l.8-1.4c0-.5.6-.7.6-1.3 0-.3-.4 0-.6 0l-.4.5-.7 1c-.2.4-.3 0-.5.4-.4.2-.6.7-1 1-.2 0 0-.4 0-.4.2-.2 0-.6.2-.6 0-.4.2-.7.4-1 0-.7.5-1 .7-1.8-.6 0-.7.6-1 1-.2.4-.6.7-.7 1.2-.2 0 0-.5 0-.8 0-.6.2-1 .3-1.7v-.8c.3-.2.2-.6 0-.7-.2 0-.3 0-.4.3-.2 0-.2.5-.3.3 0-2.5-.5-4.7-.5-7.4 0-.3 0-.4-.2-.7 1.6 0 3 0 4.8.2l-.3.4-.3.3c-.6 1.5-1 3.8-.6 6l1 1.5c1 .4 1.7 1 2.6 1.6 1.7.5 3.8.5 5.5 0 .4 0 .6 0 .8-.3 1.4-1.2 2.8-2.4 3-4.8v-1.5c-.2-1.6-.7-3-1.8-3.6.4-.3 1 0 1.7 0H72.8c.2 0 0 .5.3.7v6.5c0 1 0 2-.3 2.8zm.4-11.2c-.6 0-1.2-.3-1.8-.4 0-.3.8 0 1-.2.3-.2.2-1 .3-1.5v-1c-.4-1-1.8-.5-3-.5 0 .7-.3 1.8-.2 2.6.2.5 1 .3 1.6.5-.3.3-.8 0-1 0h-7.6v-3.6h3c-.4.4-1 .5-1.3 1-.3 0-.8.4-1 .8l.7-.4c.4 0 .5-.3 1-.4.3-.4 1-.6 1.5-1 .4 0 .7 0 1 .2H71c.6.2 1.5 0 2 .4l.3 1-.2 2.6zM67.3 55zm0 0c-.5.2-1 .4-1.4.8.5-.2 1-.3 1.4-.7zm1 .7c.2 0 0 0 0 0zm-1.7 1c.8-.3 1.2-.7 1.8-1-.5 0-.6.3-1 .4-.2.3-.6.3-.8.6zm-.7-1s0 .2 0 0zm-.6.7zm0 0zm-.2 0zm-.8.7c.3 0 .6-.2.8-.5l-.8.6zm2.3 1c.5 0 .7-.3 1.2-.4.3-.3.8-.4 1-.8-.6 0-.8.4-1.3.6-.2.3-.7.4-1 .7zm-2.3-1c-.3 0 0 .4 0 0zm-.6.5s.2 0 0 0zm3 .6c-.3.2 0 .2 0 0zm-1.3 2c-.2-.3-.7-.3-1-.4-.7 0-1.2 0-1.7.2-.3 0-.6.3-1 .5-.2 0-.4.4-.7.5-.3.2-.4.5-.8.6 0 .2 0 .3-.3.4-.2 0-.2.3-.3.3v.5c0 1.5.2 3 .6 4 .3.8 1 1 1.4 1.4.6.2 1.4.4 2.2.4h.8c1.2-.2 2-.8 2.8-1.5 0-.3.2-.6.4-.8-.2-.6.3-1 .5-1.5 0-1.4-.2-2.5-.6-3.5-.4-.5-1-.7-1.5-1V60c-.4 0-1-.2-1.2 0zM62 64.2c-.2 0-.2-.3-.3-.4.3-.2.2 0 .2.3zm0 .3c0 .2 0 0 0 0zm.4-2c0-.2 0 0 0 0zm1.7-2.2c0 .3 0 .6.2.8-.3 0-.6-.8 0-.8zm.5 4zm.7 2.8h0zm2.2-2.5c-.2 0 0 .2-.3 0l.3-.3s.2 0 0 .3zm-1-3.8s.3 0 .5.2c0 .3.2.4.3.6 0 .7.2 1.5 0 2.3 0 .2-.3.4-.5.5-.8 0-1.4-.2-2-.5 0-.2-.3-.5-.5-.7v-1l.5-.7c.2 0 .5-.2.4-.6v-.2s.2 0 .3.2c.4 0 .5-.2.8 0z"/>
-            </svg>
-          </a>
-          <!-- facebook logo -->
-          <a class="social__link" href="#">
-            <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="15" height="27.7" viewBox="56.5 50 15 27.7">
-              <path d="M68.2 55.2c1 0 2 0 2.7-.3.3-1 .4-2 .5-3-.2 0 0-.4-.2-.5 0-.2-.3-.2-.3-.4-.3 0-.5-.3-.8-.5l-2-.5h-2.7c-2.6 0-4 1.2-5.3 2.5v.2c-.6 1.6-.2 3.6-.3 5.6v1.4c-1 .3-2 .4-3.3.5-.3.3 0 1-.2 1.7 0 .4.3 1 .4 1.5l.8.5c.6.3 1.5 0 2.3.2 0 2 .4 4 0 5.6 0 .4.4.4.3.8 0 1 0 2 .3 2.7-.3.5-.5 1-.5 1.8.3 0 .3.3.2.4 0 .5.7.2.6.7 0 .6-.5.3-.5.6v1c.6.2 1.5 0 2.3 0 1-.3 2.2-.4 2.8-1 .5 0 1 0 1.2-.3 0-.3.3-.3.2-.7v-3.8c-.3-2.3 0-5-.4-7 1-.3 2-.2 2.6-.5.4-.5.4-1.3.5-2 .2-.2.2-.5.2-1 .2 0 0-.7 0-1 0-.6 0-1.3-.7-1.4-1-.4-2 .5-3 .2 0-1.2-.3-2.4 0-3.4l2.2-.6zM64.4 60l.4.7h.2c1.2 0 2.2 0 3-.2 0 1-.2 1.7-.4 2.5-.7 0-1.5.3-2 .2-.3 0-.4.5-.6.7v.7c-.2 0 0 .6-.2.8V67c0 .2-.2.2 0 .4V71c-.2.2 0 .2 0 .4v3c0 .3-.2.8 0 1 0 .3-.3 0-.7 0-.5 0-1 .4-1.5.4 0-.3.3-.6.3-1 0-.5-.3-.4-.5-.6.2-.6.6-1 .7-1.8.2-.5.7-1.3.3-1.8-.5 0-.5.3-.8.4v.2s0 .2-.2.2c0 .2 0 0 0 0v-.2s0-.2.2-.2v-.3c.4-.5.7-1.2.8-2 .2-.2.3-.6.4-1 .2-.2.4-.8.2-1-.7 0-1 .2-1 .6-.4-.2 0-.5 0-.7l.3-.8c.2-.5.6-1.3 0-1.6-.4 0-.6.2-.7.5-.2.2-.4.3-.5.7-.3 0 0-.8 0-1-.2-.7 0-1 0-1.3-.7-.7-2 0-3.3-.2 0-.3-.2-1 0-1.2 1 0 2.4.2 3-.2 0 0 0-.2.2-.2 0-.7-.4-1-.6-1.4.2-.8 0-2 0-3l.6-.6c0-1 .7-1.5.7-2.5-.3 0-.6 0-.6.2-.2-.2-.3.4-.4 0 0-.4.2-.5.3-1l1.7-1c1.8-.3 4.7-.5 6 0 .2.7-.2 1 0 1.6H68c-1 .2-2 .7-3 1-.2 0-.2.3-.4.4 0 .4-.3.6-.3 1v4z"/>
-            </svg>
-          </a>
-          <!-- twitter logo -->
-          <a class="social__link" href="#">
-            <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="23.5" height="20.2" viewBox="52.3 53.8 23.5 20.2">
-              <path d="M75.7 58c-.2-.5-1-.4-1.4-.5h-1c0-.4.2-.7.4-1 0-.4.3-.7.2-1.2 0-.2 0-.5.2-.6 0-.2.3-.5 0-.7 0-.2-.2-.2-.5-.2h-.2l-1.3 1.5-.5.3c-.3.2-.5.5-1 .6-.4-.3-1-.4-1.7-.4-1.2 0-2.3.2-3 .7-1 .4-1.6 1-2.2 1.7 0 .3-.4.3-.4.7v1c-1 0-1.6-.6-2.3-1l-2-1c-.7-.4-1.2-1-1.7-1.4-.2-.3-.6-.5-.7-1-.4 0-.2-.8-.7-.8-.5 0-.5.2-.6.4 0 .2-.4.2-.4.5-.2 1.2-.6 2-.6 3.3l.6 1c-.4 0-.7.3-1 .6 0 1 .5 1.6 1 2.3 0 .3.2.6.5 1 0 0 .2 0 .3.3v.2s.4.2.2.2c-.4.2-1 0-1.3.4v1.2c0 .3.3.3.3.5.5.5 1 .8 1.7 1.2.5 0 1.2 0 1.8.2 0 .4-.3.6-.6.8-1 .4-2 .4-2.8.7l-1.6.2c-.3 0-.8 0-1 .2-.2 0-.2 0-.3.2 0 .4 0 .7.4 1 0 0 .3 0 .4.2l.6.4c.5.5 1.2.8 2 1 .7.3 1.5.5 2.4.6l2.8.3h2.8c0-.2.4 0 .6 0 .5-.4 1-.5 1.6-1 .6 0 1-.5 1.5-.8 1-.7 2-1.3 2.6-2.3l.3-1c.3 0 .4-.3.6-.5l1-1.4.8-1.5c0-.4.3-.5.3-1 .3 0 .3-.6.5-.8V63c0-1 0-2.3-.2-3.3.6 0 1-.3 1.6-.6.4 0 1-.5.7-1zm-3.4 4c-.2.8-.6 1.3-1 2v.8c-.3.3-.4.7-.5 1l-.5 1-1.2 1.5c-.3.6-.8 1-1.2 1.5L66.4 71 65 72l-.6.3c0 .2-.5.2-.6.4h-3.6c-1 0-2 0-3-.2s-1.5-.8-2.3-1c0-.3.5-.2.8-.3 0-.3.4 0 .5-.3h.5c.6-.2 1.2-.3 1.7-.6.3 0 .4-.4.7-.5 0-.2 0-.4.2-.5l.2-.8c0-.2.3-.3.2-.6 0-.2 0-.4-.2-.4 0-.2-.4 0-.5-.2h-.5c0-.2-.5 0-.5-.2-.8 0-1.3-.4-2-.7.6-.2 1.2-.3 1.5-.7.5 0 1 0 1-.6 0-.7-.7-.7-1.2-.8-.8-.8-1.2-1.8-1.8-2.7l.7-.4c.5 0 .6-.4.7-.6 0-.5-.4-.6-.7-.8l-.7-.8v-2.4h.2c.2.6.5 1 .8 1.3.5.4 1 1 1.5 1 .6.5 1.3.7 1.7 1.2.6 0 1.2.4 1.7.7.7.2 1 .7 2 .6l.6-.3c.3-.4 0-1 0-1.6.4-.6 1-1 1.4-1.5l.8-.6c.4 0 .7-.2 1-.4h3c.2.2.4.4.7.4.7.7 1.2 1.7 1.3 3V62zm.3-5.7c0 .3-.2.7-.6.8-.2-.3 0-.3 0-.4.3 0 .4-.3.6-.3zm-5.5 3l.6.4c0 .2.3.3.6.4h.4l.3-.4c0-.6-.2-1-.5-1.4-.7-.4-1.7 0-1.4 1z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="copyright">
-          <a class="copyright__link" href="#">
-            Разработано
-            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1" viewBox="0 0 26.9 34.1">
-              <path d="M13.6 0L0 1.4V26l13.5 8L27 26V1.5L13.5 0zM25 12L13.5 5.4h-.2L2 12V3l11.5-1L25 3v9zM13.4 7L25 13.5 20.3 16l-7-4v1.3l5.8 3.5-.8.6-5-3v1.4L17 18l-.8.6-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM2 15l11.3 7v1l-8-4.8v1.4l8 4.8v1l-8-4.6v1.4l8 4.8h.2l8-4.8V17l3.5-2v10l-11.5 7L2 25V15z"/>
-            </svg>
-          </a>
-        </div>
-      </footer>
+        <!-- facebook logo -->
+        <a class="social__link" href="#">
+          <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="27.7" viewBox="56.5 50 15 27.7">
+            <path d="M68.2 55.2c1 0 2 0 2.7-.3.3-1 .4-2 .5-3-.2 0 0-.4-.2-.5 0-.2-.3-.2-.3-.4-.3 0-.5-.3-.8-.5l-2-.5h-2.7c-2.6 0-4 1.2-5.3 2.5v.2c-.6 1.6-.2 3.6-.3 5.6v1.4c-1 .3-2 .4-3.3.5-.3.3 0 1-.2 1.7 0 .4.3 1 .4 1.5l.8.5c.6.3 1.5 0 2.3.2 0 2 .4 4 0 5.6 0 .4.4.4.3.8 0 1 0 2 .3 2.7-.3.5-.5 1-.5 1.8.3 0 .3.3.2.4 0 .5.7.2.6.7 0 .6-.5.3-.5.6v1c.6.2 1.5 0 2.3 0 1-.3 2.2-.4 2.8-1 .5 0 1 0 1.2-.3 0-.3.3-.3.2-.7v-3.8c-.3-2.3 0-5-.4-7 1-.3 2-.2 2.6-.5.4-.5.4-1.3.5-2 .2-.2.2-.5.2-1 .2 0 0-.7 0-1 0-.6 0-1.3-.7-1.4-1-.4-2 .5-3 .2 0-1.2-.3-2.4 0-3.4l2.2-.6zM64.4 60l.4.7h.2c1.2 0 2.2 0 3-.2 0 1-.2 1.7-.4 2.5-.7 0-1.5.3-2 .2-.3 0-.4.5-.6.7v.7c-.2 0 0 .6-.2.8V67c0 .2-.2.2 0 .4V71c-.2.2 0 .2 0 .4v3c0 .3-.2.8 0 1 0 .3-.3 0-.7 0-.5 0-1 .4-1.5.4 0-.3.3-.6.3-1 0-.5-.3-.4-.5-.6.2-.6.6-1 .7-1.8.2-.5.7-1.3.3-1.8-.5 0-.5.3-.8.4v.2s0 .2-.2.2c0 .2 0 0 0 0v-.2s0-.2.2-.2v-.3c.4-.5.7-1.2.8-2 .2-.2.3-.6.4-1 .2-.2.4-.8.2-1-.7 0-1 .2-1 .6-.4-.2 0-.5 0-.7l.3-.8c.2-.5.6-1.3 0-1.6-.4 0-.6.2-.7.5-.2.2-.4.3-.5.7-.3 0 0-.8 0-1-.2-.7 0-1 0-1.3-.7-.7-2 0-3.3-.2 0-.3-.2-1 0-1.2 1 0 2.4.2 3-.2 0 0 0-.2.2-.2 0-.7-.4-1-.6-1.4.2-.8 0-2 0-3l.6-.6c0-1 .7-1.5.7-2.5-.3 0-.6 0-.6.2-.2-.2-.3.4-.4 0 0-.4.2-.5.3-1l1.7-1c1.8-.3 4.7-.5 6 0 .2.7-.2 1 0 1.6H68c-1 .2-2 .7-3 1-.2 0-.2.3-.4.4 0 .4-.3.6-.3 1v4z"/>
+          </svg>
+        </a>
+        <!-- twitter logo -->
+        <a class="social__link" href="#">
+          <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="23.5" height="20.2" viewBox="52.3 53.8 23.5 20.2">
+            <path d="M75.7 58c-.2-.5-1-.4-1.4-.5h-1c0-.4.2-.7.4-1 0-.4.3-.7.2-1.2 0-.2 0-.5.2-.6 0-.2.3-.5 0-.7 0-.2-.2-.2-.5-.2h-.2l-1.3 1.5-.5.3c-.3.2-.5.5-1 .6-.4-.3-1-.4-1.7-.4-1.2 0-2.3.2-3 .7-1 .4-1.6 1-2.2 1.7 0 .3-.4.3-.4.7v1c-1 0-1.6-.6-2.3-1l-2-1c-.7-.4-1.2-1-1.7-1.4-.2-.3-.6-.5-.7-1-.4 0-.2-.8-.7-.8-.5 0-.5.2-.6.4 0 .2-.4.2-.4.5-.2 1.2-.6 2-.6 3.3l.6 1c-.4 0-.7.3-1 .6 0 1 .5 1.6 1 2.3 0 .3.2.6.5 1 0 0 .2 0 .3.3v.2s.4.2.2.2c-.4.2-1 0-1.3.4v1.2c0 .3.3.3.3.5.5.5 1 .8 1.7 1.2.5 0 1.2 0 1.8.2 0 .4-.3.6-.6.8-1 .4-2 .4-2.8.7l-1.6.2c-.3 0-.8 0-1 .2-.2 0-.2 0-.3.2 0 .4 0 .7.4 1 0 0 .3 0 .4.2l.6.4c.5.5 1.2.8 2 1 .7.3 1.5.5 2.4.6l2.8.3h2.8c0-.2.4 0 .6 0 .5-.4 1-.5 1.6-1 .6 0 1-.5 1.5-.8 1-.7 2-1.3 2.6-2.3l.3-1c.3 0 .4-.3.6-.5l1-1.4.8-1.5c0-.4.3-.5.3-1 .3 0 .3-.6.5-.8V63c0-1 0-2.3-.2-3.3.6 0 1-.3 1.6-.6.4 0 1-.5.7-1zm-3.4 4c-.2.8-.6 1.3-1 2v.8c-.3.3-.4.7-.5 1l-.5 1-1.2 1.5c-.3.6-.8 1-1.2 1.5L66.4 71 65 72l-.6.3c0 .2-.5.2-.6.4h-3.6c-1 0-2 0-3-.2s-1.5-.8-2.3-1c0-.3.5-.2.8-.3 0-.3.4 0 .5-.3h.5c.6-.2 1.2-.3 1.7-.6.3 0 .4-.4.7-.5 0-.2 0-.4.2-.5l.2-.8c0-.2.3-.3.2-.6 0-.2 0-.4-.2-.4 0-.2-.4 0-.5-.2h-.5c0-.2-.5 0-.5-.2-.8 0-1.3-.4-2-.7.6-.2 1.2-.3 1.5-.7.5 0 1 0 1-.6 0-.7-.7-.7-1.2-.8-.8-.8-1.2-1.8-1.8-2.7l.7-.4c.5 0 .6-.4.7-.6 0-.5-.4-.6-.7-.8l-.7-.8v-2.4h.2c.2.6.5 1 .8 1.3.5.4 1 1 1.5 1 .6.5 1.3.7 1.7 1.2.6 0 1.2.4 1.7.7.7.2 1 .7 2 .6l.6-.3c.3-.4 0-1 0-1.6.4-.6 1-1 1.4-1.5l.8-.6c.4 0 .7-.2 1-.4h3c.2.2.4.4.7.4.7.7 1.2 1.7 1.3 3V62zm.3-5.7c0 .3-.2.7-.6.8-.2-.3 0-.3 0-.4.3 0 .4-.3.6-.3zm-5.5 3l.6.4c0 .2.3.3.6.4h.4l.3-.4c0-.6-.2-1-.5-1.4-.7-.4-1.7 0-1.4 1z"/>
+          </svg>
+        </a>
+      </div>
 
-    </div>
+      <div class="copyright">
+        <a class="copyright__link" href="#">
+          Разработано
+          <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1" viewBox="0 0 26.9 34.1">
+            <path fill="#63d1bb" d="M13.6 0L0 1.4V26l13.5 8L27 26V1.5L13.5 0zM25 12L13.5 5.4h-.2L2 12V3l11.5-1L25 3v9zM13.4 7L25 13.5 20.3 16l-7-4v1.3l5.8 3.5-.8.6-5-3v1.4L17 18l-.8.6-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM2 15l11.3 7v1l-8-4.8v1.4l8 4.8v1l-8-4.6v1.4l8 4.8h.2l8-4.8V17l3.5-2v10l-11.5 7L2 25V15z"/>
+          </svg>
+        </a>
+      </div>
+
+    </footer>
 
   </body>
 </html>

@@ -1,0 +1,55 @@
+// ----------------------- MOBILE -----------------------
+
+.copyright {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // size
+  width: 260px;
+  // indent
+  padding: 23px 0;
+  // borders
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright__link {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // size
+  width: 183px;
+  // font
+  font: bold 19px/18px 'Open Sans', 'Tahoma', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+
+  &:hover .copyright__icon {
+    // background
+    fill: #46c1ae;
+  }
+
+  &:active {
+    // stylization
+    opacity: 0.3;
+  }
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .copyright {
+    // size
+    width: auto;
+    // indent
+    padding: 0;
+    // borders
+    border: none;
+  }
+
+}

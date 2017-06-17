@@ -1,0 +1,58 @@
+// ----------------------- MOBILE -----------------------
+
+.pagination {
+  // display
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // indents
+  margin: 0 0 40px 0;
+}
+
+.pagination__button {
+  // indents
+  padding: 12px 42px 8px 38px;
+  // reset browser settings
+  appearance: none;
+  border: none;
+  background: none;
+  // borders
+  outline: 1px solid #ececec;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .pagination {
+    // position
+    position: absolute;
+    top: 358px;
+    right: 50px;
+    // indents
+    margin: 0;
+  }
+
+  .pagination__button {
+    // indents
+    padding: 12px 18px;
+    // borders
+    outline: none;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .pagination {
+    // position
+    top: 308px;
+  }
+
+}

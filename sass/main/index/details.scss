@@ -1,0 +1,55 @@
+// ----------------------- MOBILE -----------------------
+
+.details {
+  // size
+  width: 100%;
+  // indents
+  margin: 0 0 27px 0;
+}
+
+.details__item {
+  // borders
+  border-bottom: 1px solid #ececec;
+}
+
+.details__name {
+  // size
+  width: 98px;
+}
+
+.details__name,
+.details__value {
+  // indents
+  padding: 10px 0;
+  // font
+  font: normal 15px/20px 'Open Sans', 'Tahoma', sans-serif;
+  color: #444444;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .details {
+    // size
+    width: 290px;
+    // indents
+    margin-bottom: 55px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .details {
+    // indents
+    margin-bottom: 108px;
+  }
+
+}

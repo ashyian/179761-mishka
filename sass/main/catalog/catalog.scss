@@ -1,0 +1,40 @@
+// ----------------------- MOBILE -----------------------
+
+.catalog {
+  // display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // indents
+  padding: 15px 0;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .catalog {
+    // indents
+    padding: 58px 0 28px;
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .catalog {
+    // display
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    // indents
+    padding: 157px 51px 33px 49px;
+  }
+
+}
