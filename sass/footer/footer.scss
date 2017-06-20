@@ -36,7 +36,7 @@
     // display
     display: block;
     // size
-    width: 183px;
+    margin: 0 78px 10px 0;
 
     &:hover {
       // background
@@ -47,6 +47,19 @@
       // stylization
       opacity: 0.3;
     }
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .footer__link {
+    // size
+    margin: 0 79px 14px 3px;
   }
 
 }

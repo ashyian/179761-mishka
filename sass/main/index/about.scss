@@ -2,7 +2,7 @@
 
 .about {
   // indents
-  padding: 29px 28px 10px;
+  padding: 27px 28px 10px;
 }
 
 .about__title {
@@ -40,7 +40,7 @@
 
   .about {
     // indents
-    padding: 58px 46px 40px;
+    padding: 50px 46px 40px;
   }
 
   .about__title {
@@ -92,11 +92,12 @@
 
   .about {
     // indents
-    padding: 71px 226px 48px 226px;
+    padding: 60px 226px 48px 226px;
   }
 
   .about__title {
     // indents
+    margin-left: -4px;
     margin-bottom: 39px;
     // font
     font-size: 53px;
