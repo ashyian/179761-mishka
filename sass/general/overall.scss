@@ -2,9 +2,10 @@
 
 
 body {
-  outline: 1px solid black;
   // position
   position: relative;
+  // indents
+  margin: 0 auto;
   // size
   width: 320px;
 }
@@ -16,7 +17,6 @@ body {
 @media #{$tablet-widths} {
 
   body {
-    outline: 1px solid black;
   // size
     width: 768px;
   }
@@ -30,7 +30,6 @@ body {
 @media #{$desktop-widths} {
 
   body {
-    outline: 1px solid black;
   // size
     width: 1150px;
   }
