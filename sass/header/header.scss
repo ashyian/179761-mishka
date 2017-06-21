@@ -85,6 +85,9 @@
       // indents
       padding: 153px 50px 485px;
       // background
+      background-color: #fff;
+      background-image: url('../img/hero-tablet@1x.jpg');
+      background-size: 1150px 746px;
     }
     &--catalog, &--form {
       // indents
@@ -96,6 +99,13 @@
     // font
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media #{$retina} {
+    .header__title--main {
+      background-image: url('../img/hero-tablet@2x.jpg');
+      background-size: 180%;
+    }
   }
 
 }
