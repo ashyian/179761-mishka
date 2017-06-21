@@ -1,8 +1,10 @@
 // ----------------------- MOBILE -----------------------
 
 .header {
-  // positioning
+  // position
   position: relative;
+  // indents
+  padding-top: 79px;
 }
 
 .header__logo {
@@ -25,6 +27,9 @@
 }
 
 .header__title {
+  // borders
+  border-top: 1px solid #ececec;
+
   &--main {
     // indents
     padding: 70px 30px 122px;
@@ -63,6 +68,11 @@
 
 @media #{$tablet-widths} {
 
+  .header {
+    // indents
+    padding-top: 0;
+  }
+
   .header__logo {
     // position
     left: 49px;
@@ -81,6 +91,9 @@
   }
 
   .header__title {
+    // borders
+    border: none;
+
     &--main {
       // indents
       padding: 153px 50px 485px;
