@@ -1,0 +1,43 @@
+// ----------------------- MOBILE -----------------------
+
+.wavy-line {
+  // size
+  height: 7px;
+  width: 320px;
+  // background
+  background-image: url('../img/wavy-line.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .wavy-line {
+    // size
+    height: 16px;
+    width: 768px;
+    // background
+    background-image: url('../img/wavy-line-desktop.png');
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .wavy-line {
+    // size
+    height: 23px;
+    width: 1050px;
+    // indents
+    margin-left: 50px;
+  }
+
+}

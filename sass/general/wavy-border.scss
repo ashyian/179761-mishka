@@ -1,0 +1,61 @@
+// ----------------------- MOBILE -----------------------
+
+.wavy-border {
+  // position
+  position: absolute;
+  z-index: 20;
+  // size
+  width: 100%;
+  // background
+  background-repeat: repeat-x;
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .wavy-border {
+    // size
+    height: 24px;
+    // background
+    background-image: url('../img/wavy-border.png');
+
+    &--main {
+      // position
+      top: 822px;
+    }
+
+    &--catalog, &--form {
+      // position
+      top: 302px;
+    }
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .wavy-border {
+    // size
+    height: 24px;
+    // background
+    background-image: url('../img/wavy-border-desktop.png');
+
+    &--main {
+      // position
+      top: 817px;
+    }
+
+    &--catalog, &--form {
+      // position
+      top: 326px;
+    }
+  }
+
+}

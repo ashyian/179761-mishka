@@ -18,6 +18,16 @@
   background: none;
   // borders
   outline: 1px solid #ececec;
+
+  &:hover {
+    // stylization
+    opacity: 0.6;
+  }
+
+  &:active {
+    // stylization
+    opacity: 0.3;
+  }
 }
 
 

@@ -2,7 +2,7 @@
 
 .contacts {
   // indents
-  padding: 36px 30px 40px 28px;
+  padding: 35px 30px 40px 28px;
 }
 
 .contacts__title {
@@ -73,12 +73,13 @@
     // position
     position: relative;
     // indents
-    padding: 70px 50px 57px;
+    padding: 62px 50px 57px;
   }
 
   .contacts__title {
     // indents
     margin-bottom: 33px;
+    margin-left: -4px;
     // font
     font-size: 43px;
     line-height: 50px;
@@ -89,13 +90,13 @@
     display: block;
     // position
     position: absolute;
-    top: 53px;
+    top: 47px;
     right: 53px;
   }
 
   .contacts__table {
     // indents
-    margin-bottom: 42px;
+    margin-bottom: 41px;
   }
 
   .contacts__row {
@@ -123,7 +124,7 @@
 
   .contacts {
     // indents
-    padding: 155px 50px 105px 226px;
+    padding: 142px 50px 105px 226px;
   }
 
   .contacts__title {
@@ -134,7 +135,7 @@
 
   .contacts__icon {
     // position
-    top: 147px;
+    top: 133px;
     left: 115px;
   }
 
