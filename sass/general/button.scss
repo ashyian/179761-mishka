@@ -14,6 +14,7 @@
   // stylization
   appearance: none;
   background: none;
+  cursor: pointer;
 
   &:hover {
     // font
@@ -107,6 +108,11 @@
     // size
     width: 580px;
   }
+
+  .modal .button {
+    // size
+    width: 345px;
+  }
 }
 
 
@@ -114,11 +120,6 @@
 
 
 @media #{$desktop-widths} {
-
-  .modal .button {
-    // size
-    width: 345px;
-  }
 
   .contacts .button {
     // size

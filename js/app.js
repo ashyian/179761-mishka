@@ -8,6 +8,7 @@ window.app = (function () {
 
     init: function () {
       window.menuBehavior.init();
+      window.modalBehavior.init();
       window.googleMap.init();
     }
   };
