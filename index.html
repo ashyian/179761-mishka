@@ -5,7 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -42,8 +42,8 @@
       </picture>
 
       <button class="menu-toggle" type="button">
-        <svg class="menu-toggle__icon menu-toggle__icon--close" width="20.5" height="20.5"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close"></use></svg>
-        <svg class="menu-toggle__icon menu-toggle__icon--open hidden" width="20" height="20.5"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use></svg>
+        <div class="menu-toggle__icon menu-toggle__icon--close"><svg width="20.5" height="20.5"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close"></use></svg></div>
+        <div class="menu-toggle__icon menu-toggle__icon--open hidden"><svg width="20" height="20.5"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use></svg></div>
       </button>
 
       <nav class="menu">
@@ -216,7 +216,7 @@
           </tr>
         </table>
 
-        <a class="map" href="#">
+        <a class="map">
           <picture class="map__container">
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
@@ -282,11 +282,11 @@
       <a class="button button--tiffany button--add">Добавить</a>
     </section>
 
-    <script src="js/picturefill.js" async></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/modal-behavior.js"></script>
-    <script src="js/menu-behavior.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/google-map.min.js"></script>
+    <script src="js/modal-behavior.min.js"></script>
+    <script src="js/menu-behavior.min.js"></script>
+    <script src="js/app.min.js"></script>
 
   </body>
 </html>

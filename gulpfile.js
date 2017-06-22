@@ -54,6 +54,7 @@ gulp.task("style", function() {
 gulp.task("script", function() {
   return gulp.src("build/js/*.js")
     .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("build/js"));
 });
 
@@ -100,7 +101,7 @@ gulp.task("html:update", ["html:copy"], function(done) {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: ".",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
