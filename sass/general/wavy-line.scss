@@ -5,7 +5,7 @@
   height: 7px;
   width: 320px;
   // background
-  background-image: url('../img/wavy-line.png');
+  background-image: url("../img/wavy-line.png");
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -21,7 +21,7 @@
     height: 16px;
     width: 768px;
     // background
-    background-image: url('../img/wavy-line-desktop.png');
+    background-image: url("../img/wavy-line-desktop.png");
   }
 
 }

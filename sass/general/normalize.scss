@@ -227,7 +227,7 @@ mark {
 
   q:before,
   q:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -365,7 +365,7 @@ pre,
 samp {
   font-family: monospace, monospace;
   @if $legacy_browser_support {
-    _font-family: 'courier new', monospace;
+    _font-family: "courier new", monospace;
   }
   font-size: 1em;
 }
@@ -486,7 +486,7 @@ input[type="radio"] {
 }
 
 /**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * Fix the cursor style for Chrome"s increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
@@ -529,7 +529,7 @@ fieldset {
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 2. Remove padding so people aren"t caught out if they zero out fieldsets.
  * 3. Corrects text not wrapping in Firefox 3.
  * 4. Corrects alignment displayed oddly in IE 6/7.
  */
@@ -552,7 +552,7 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
+ * Don"t inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 

@@ -1,6 +1,6 @@
 /* Initializes other modules */
 
-'use strict';
+"use strict";
 
 window.app = (function () {
 
