@@ -9,7 +9,7 @@
   // indents
   margin: 0 0 5px 0;
   // font
-  font: bold 25px/30px 'Open Sans', 'Tahoma', sans-serif;
+  font: bold 25px/30px "Open Sans", "Tahoma", sans-serif;
   color: #000;
 }
 
@@ -19,7 +19,7 @@
   // indents
   margin: 0 0 23px 0;
   // font
-  font: bold 17px/20px 'Open Sans', 'Tahoma', sans-serif;
+  font: bold 17px/20px "Open Sans", "Tahoma", sans-serif;
   text-transform: uppercase;
   color: #63d1bb;
 }
@@ -28,7 +28,7 @@
   // indents
   margin: 0 0 17px 0;
   // font
-  font: normal 15px/24px 'Open Sans', 'Tahoma', sans-serif;
+  font: normal 15px/24px "Open Sans", "Tahoma", sans-serif;
   color: #444444;
 }
 
@@ -43,7 +43,7 @@
   // indents
   margin: 0 0 25px 0;
   // font
-  font: bold 17px/24px 'Open Sans', 'Tahoma', sans-serif;
+  font: bold 17px/24px "Open Sans", "Tahoma", sans-serif;
   color: #444444;
   text-align: center;
 }
@@ -58,11 +58,12 @@
     // position
     position: relative;
     // indents
-    padding: 52px 47px 52px;
+    padding: 52px 49px 52px;
   }
 
   .weekly__title {
     // indents
+    margin-left: -2px;
     margin-bottom: 49px;
     // font
     font-size: 43px;

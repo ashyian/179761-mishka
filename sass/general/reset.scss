@@ -34,14 +34,14 @@ blockquote, q {
 
 blockquote {
   &:before, &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
 
 q {
   &:before, &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }

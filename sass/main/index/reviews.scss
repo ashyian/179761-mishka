@@ -9,7 +9,7 @@
   // indents
   margin: 0 0 23px 0;
   // font
-  font: bold 25px/30px 'Open Sans', 'Tahoma', sans-serif;
+  font: bold 25px/30px "Open Sans", "Tahoma", sans-serif;
   color: #000;
 }
 
@@ -17,7 +17,7 @@
   // indents
   margin: 0 0 28px 0;
   // font
-  font: normal 15px/30px 'Open Sans', 'Tahoma', sans-serif;
+  font: normal 15px/30px "Open Sans", "Tahoma", sans-serif;
   color: #444;
 }
 
@@ -27,7 +27,7 @@
   // indents
   margin: 0 0 3px 0;
   // font
-  font: bold 17px/24px 'Open Sans', 'Tahoma', sans-serif;
+  font: bold 17px/24px "Open Sans", "Tahoma", sans-serif;
   color: #000;
 }
 
@@ -37,7 +37,7 @@
   // indents
   margin: 0 0 30px 0;
   // font
-  font: normal 17px/30px 'Open Sans', 'Tahoma', sans-serif;
+  font: normal 17px/30px "Open Sans", "Tahoma", sans-serif;
   color: #444;
 }
 
@@ -54,7 +54,7 @@
     padding: 78px 49px 85px;
     // background
     background-color: #fff;
-    background-image: url('../img/review@1x.jpg');
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -87,7 +87,7 @@
 
   @media #{$retina} {
     .reviews {
-      background-image: url('../img/review@2x.jpg');
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px 457px;
     }
   }
@@ -126,7 +126,7 @@
 
   @media #{$retina} {
     .reviews {
-      background-image: url('../img/review@2x.jpg');
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px 457px;
     }
   }

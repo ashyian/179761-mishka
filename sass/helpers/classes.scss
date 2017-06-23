@@ -1,0 +1,11 @@
+.hidden {
+  display: none;
+}
+
+.not-inline {
+  position: absolute;
+  width: 320px;
+  top: 79px;
+  padding: 0;
+  z-index: 5;
+}
