@@ -54,7 +54,7 @@ gulp.task("style", function() {
 gulp.task("script", function() {
   return gulp.src("build/js/*.js")
     .pipe(jsmin())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"));
 });
 
