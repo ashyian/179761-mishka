@@ -1,17 +1,20 @@
 // ----------------------- MOBILE -----------------------
 
 .header {
+  // display
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   // position
   position: relative;
   // indents
-  padding-top: 79px;
+  padding-top: 22px;
 }
 
 .header__logo {
-  // position
-  position: absolute;
-  left: 116px;
-  top: 22px;
+  // indents
+  margin-left: 116px;
+  margin-right: 61px;
 
   &:hover {
     opacity: 0.6;
@@ -29,6 +32,8 @@
 .header__title {
   // borders
   border-top: 1px solid #ececec;
+  // size
+  width: 100%;
 
   &--main {
     // indents
@@ -50,7 +55,9 @@
 
 .header__text {
   // font
-  font: bold 27px/30px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
   text-align: center;
   color: #000;
 }
@@ -69,30 +76,40 @@
 @media #{$tablet-widths} {
 
   .header {
+    // display
+    justify-content: space-between;
     // indents
     padding-top: 0;
   }
 
   .header__logo {
-    // position
-    left: 49px;
+    // indents
+    margin-top: 22px;
+    margin-left: 48px;
   }
 
   .header__delivery {
     // display
     display: block;
-    // position
-    position: absolute;
-    right: 50px;
-    top: 105px;
+    order: 4;
+    // indents
+    margin-right: 50px;
+    padding-top: 18px;
     // font
-    font: normal 15px/24px "Open Sans", "Tahoma", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
     color: #444;
   }
 
   .header__title {
-    // borders
-    border: none;
+    // display
+    order: 5;
+    // position
+    position: relative;
+    top: -70px;
+    z-index: -1;
+    // indents
+    margin-bottom: -70px;
 
     &--main {
       // indents
@@ -129,7 +146,17 @@
 
 @media #{$desktop-widths} {
 
+  .header__delivery {
+    // indents
+    margin-right: 48px;
+  }
+
   .header__title {
+    // position
+    top: -42px;
+    // indents
+    margin-bottom: -42px;
+
     &--main {
       // indents
       padding: 153px 50px 478px;
@@ -146,11 +173,11 @@
 
   .header__logo {
     // display
-    display: block;
-    // position
-    top: 8px;
-    left: 503px;
-    z-index: 10;
+    order: 1;
+    // indents
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 28px;
   }
 
   .header__text {

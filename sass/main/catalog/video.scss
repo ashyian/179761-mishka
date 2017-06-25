@@ -53,7 +53,9 @@
   // indents
   margin-left: 23px;
   // font
-  font: bold 17px/24px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
   color: #000;
 }
 
@@ -88,7 +90,8 @@
   padding: 0 34px;
   margin: 0 0 25px 0;
   // font
-  font: normal 13px/24px "Open Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
   color: #444;
 }
 
@@ -195,7 +198,7 @@
     margin: 0;
   }
 
-  .video__title-container, .video__desc {
+  .video__title-container, .video__title, .video__desc {
     // size
     width: 230px;
   }

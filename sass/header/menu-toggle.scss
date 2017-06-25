@@ -1,15 +1,14 @@
 // ----------------------- MOBILE -----------------------
 
 .menu-toggle {
-  // positioning
-  position: absolute;
-  right: 25px;
-  top: 27px;
   // reset browser settings
   appearance: none;
   outline: none;
   border: none;
   background: none;
+  // indents
+  margin-top: 5px;
+  margin-bottom: 26px;
 }
 
 

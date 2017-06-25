@@ -9,13 +9,15 @@
   // indents
   margin: 0 0 11px 0;
   // font
-  font: bold 18px/30px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
   color: #000;
 }
 
 .contacts__icon {
   // display
-  display: none
+  display: none;
 }
 
 .contacts__table {
@@ -28,7 +30,8 @@
   // indents
   padding: 15px 0;
   // font
-  font: normal 15px/30px "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   vertical-align: top;
   color: #444;
 }
@@ -149,8 +152,6 @@
   .contacts__row {
     // display
     display: table-row;
-    // size
-    width: auto;
   }
 
 }

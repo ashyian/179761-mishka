@@ -2,12 +2,13 @@
 
 
 body {
-  // position
-  position: relative;
   // indents
   margin: 0 auto;
   // size
   width: 320px;
+  // font
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: normal;
 }
 
 
@@ -17,7 +18,7 @@ body {
 @media #{$tablet-widths} {
 
   body {
-  // size
+    // size
     width: 768px;
   }
 
@@ -30,7 +31,7 @@ body {
 @media #{$desktop-widths} {
 
   body {
-  // size
+    // size
     width: 1150px;
   }
 
