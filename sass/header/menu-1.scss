@@ -1,0 +1,111 @@
+// ----------------------- MOBILE -----------------------
+
+.menu-1 {
+  // size
+  width: 320px;
+}
+
+.menu-1__item {
+  // indents
+  padding-top: 26px;
+  padding-left: 75px;
+  padding-bottom: 28px;
+  // borders
+  border-top: 1px solid #ececec;
+  // background
+  background-color: #fff;
+}
+
+.menu-1__link {
+  // font
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+// ----------------------- TABLET -----------------------
+
+
+@media #{$tablet-widths} {
+
+  .menu-1 {
+    // display
+    display: flex;
+    order: 3;
+    // indents
+    margin-left: 50px;
+  }
+
+  .menu-1__item {
+    // indents
+    padding-top: 18px;
+    padding-left: 0;
+    padding-bottom: 28px;
+    // borders
+    border: none;
+    // background
+    background: none;
+  }
+
+  .menu-1__link {
+    // font
+    font-size: 15px;
+
+    &--catalog {
+      // indents
+      margin-right: 36px;
+    }
+  }
+
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .menu-1 {
+    // display
+    order: 0;
+    // size
+    min-width: 380px;
+    // indents
+    margin-left: 51px;
+  }
+
+  .menu-1__item {
+    // indents
+    padding-top: 31px;
+
+    &--catalog {
+      // borders
+      border-right: 1px solid #ececec;
+    }
+  }
+
+  .menu-1__link {
+
+    &--order {
+      // indents
+      margin-left: 34px;
+    }
+  }
+
+  .menu-1__link {
+    // font
+    font-size: 17px;
+  }
+
+}

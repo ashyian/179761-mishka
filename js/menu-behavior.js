@@ -4,32 +4,28 @@ window.menuBehavior = (function () {
 
   var tabletWidth = 768;
   var isOpen = false;
-  var menu = document.querySelector(".menu");
-  var menuItems = document.querySelectorAll(".menu__item");
+  var menu1 = document.querySelector(".menu-1");
+  var menu2 = document.querySelector(".menu-2");
   var menuButton = document.querySelector(".menu-toggle");
   var menuIcon = document.querySelector(".menu-toggle__icon");
   var closeIconSrc = "img/icon-menu-close.svg";
   var openIconSrc = "img/icon-menu-open.svg";
 
   function menuClose() {
-    for (var i = 0; i < menuItems.length; i++) {
-      menuItems[i].classList.add("hidden");
-    }
+    menu1.classList.add("hidden");
+    menu2.classList.add("hidden");
   }
 
   function menuOpen() {
-    for (var i = 0; i < menuItems.length; i++) {
-      if (menuItems[i].classList[1] !== "menu__item--new" &&
-          menuItems[i].classList[1] !== "menu__item--sale") {
-        menuItems[i].classList.remove("hidden");
-      }
-    }
+    menu1.classList.remove("hidden");
+    menu2.classList.remove("hidden");
   }
 
   // make menu not inline in mobile version
   function sizeChangeHandler() {
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    width < tabletWidth ? menu.classList.add("not-inline") : menu.classList.remove("not-inline");
+    width < tabletWidth ? menu1.classList.add("not-inline-1") : menu1.classList.remove("not-inline-1");
+    width < tabletWidth ? menu2.classList.add("not-inline-2") : menu2.classList.remove("not-inline-2");
   }
 
   // open and close menu by hamburger button clicking

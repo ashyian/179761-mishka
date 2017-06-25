@@ -2,10 +2,18 @@
   display: none;
 }
 
-.not-inline {
+.not-inline-1 {
   position: absolute;
   width: 320px;
   top: 79px;
+  padding: 0;
+  z-index: 5;
+}
+
+.not-inline-2 {
+  position: absolute;
+  width: 320px;
+  top: 237px;
   padding: 0;
   z-index: 5;
 }

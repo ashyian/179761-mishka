@@ -1,0 +1,47 @@
+// ----------------------- MOBILE -----------------------
+
+.menu-3 {
+  // display
+  display: none;
+}
+
+
+// ----------------------- DESKTOP -----------------------
+
+
+@media #{$desktop-widths} {
+
+  .menu-3 {
+    // display
+    display: flex;
+    order: 4;
+    // indents
+    margin-left: 52px;
+  }
+
+  .menu-3__item {
+    // indents
+    padding-top: 18px;
+    padding-left: 0;
+  }
+
+  .menu-3__link {
+    // font
+    font-size: 15px;
+
+    &--new {
+      // indents
+      margin-right: 62px;
+    }
+  }
+
+  .menu-3__link {
+    // font
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000;
+  }
+
+}
