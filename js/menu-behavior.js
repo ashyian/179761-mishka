@@ -3,11 +3,13 @@
 window.menuBehavior = (function () {
 
   var tabletWidth = 768;
+  var isOpen = false;
   var menu = document.querySelector(".menu");
   var menuItems = document.querySelectorAll(".menu__item");
-  var menuBtns = document.querySelectorAll(".menu-toggle");
-  var closeBtn = document.querySelector(".menu-toggle--close");
-  var openBtn = document.querySelector(".menu-toggle--open");
+  var menuButton = document.querySelector(".menu-toggle");
+  var menuIcon = document.querySelector(".menu-toggle__icon");
+  var closeIconSrc = "img/icon-menu-close.svg";
+  var openIconSrc = "img/icon-menu-open.svg";
 
   function menuClose() {
     for (var i = 0; i < menuItems.length; i++) {
@@ -32,10 +34,9 @@ window.menuBehavior = (function () {
 
   // open and close menu by hamburger button clicking
   function menuControlHandler(event) {
-    var isOpen = openBtn.classList.contains("hidden");
-    isOpen ? closeBtn.classList.add("hidden") : closeBtn.classList.remove("hidden");
-    isOpen ? openBtn.classList.remove("hidden") : openBtn.classList.add("hidden");
+    isOpen ? menuIcon.src = openIconSrc : menuIcon.src = closeIconSrc;
     isOpen ? menuClose() : menuOpen();
+    isOpen = isOpen ? false : true;
   }
 
   return {
@@ -45,17 +46,14 @@ window.menuBehavior = (function () {
       sizeChangeHandler();
       window.addEventListener("resize", sizeChangeHandler);
 
-      // hide open icon and show close icon by default
-      closeBtn.classList.add("hidden");
-      openBtn.classList.remove("hidden");
+      // show close icon by default
+      menuIcon.src = openIconSrc;
 
       // close menu by default
       menuClose();
 
       // subscribe menu button to control event
-      for (var i = 0; i < menuBtns.length; i++) {
-        menuBtns[i].addEventListener("click", menuControlHandler);
-      }
+      menuButton.addEventListener("click", menuControlHandler);
     }
 
   };
