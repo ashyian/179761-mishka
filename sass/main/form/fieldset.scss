@@ -111,7 +111,7 @@
 
   &--type::before, &--color::before {
     // display
-    content: '';
+    content: "";
     // position
     position: absolute;
     left: -62px;
@@ -157,7 +157,7 @@
       // background
       background: url(../img/icon-circle.svg) center center no-repeat;
       background-size: 16px;
-    padding: 0;
+      padding: 0;
     }
   }
 
@@ -232,6 +232,10 @@
 @media #{$tablet-widths} {
 
   .fieldset {
+    outline: 1px solid red;
+    // display
+    display: flex;
+    flex-direction: row;
     // position
     position: relative;
     // indents
@@ -274,13 +278,8 @@
   }
 
   .fieldset__title {
-    // indents
-    padding: 0;
-    margin: 0;
-    // position
-    position: absolute;
-    top: 67px;
-    left: 51px;
+    outline: 1px solid blue;
+    display: table-cell;
 
     &--email {
       top: 26px;
@@ -288,6 +287,7 @@
   }
 
   .fieldset__list {
+    outline: 1px solid green;
 
     &--type, &--color {
       // indents
@@ -381,7 +381,7 @@
 
     &--name, &--phone, &--email, &--message {
       // font
-      font-size: 19px
+      font-size: 19px;
     }
 
     &--name {
