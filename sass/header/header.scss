@@ -50,7 +50,9 @@
 
 .header__text {
   // font
-  font: bold 27px/30px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
   text-align: center;
   color: #000;
 }
@@ -86,7 +88,8 @@
     right: 50px;
     top: 105px;
     // font
-    font: normal 15px/24px "Open Sans", "Tahoma", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
     color: #444;
   }
 

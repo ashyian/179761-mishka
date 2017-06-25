@@ -21,7 +21,9 @@
   // indents
   padding-right: 25px;
   // font
-  font: bold 17px/16px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
 }
@@ -97,7 +99,9 @@
   // position
   position: relative;
   // font
-  font: bold 17px/18px "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
   color: #000;
 
   &--type, &--color {
@@ -173,7 +177,8 @@
     // size
     width: 100%;
     // font
-    font: normal 17px/18px "Open Sans", "Tahoma", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
     color: #444;
     // borders
     border-bottom: 2px solid #000;
