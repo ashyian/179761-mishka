@@ -60,7 +60,7 @@
   }
 
   &--message {
-    padding: 24px 0 18px;
+    padding: 24px 0 16px;
   }
 }
 
@@ -211,6 +211,8 @@
   }
 
   &--message {
+    // size
+    min-height: 110px;
     // indents
     padding: 14px;
     // borders
@@ -301,7 +303,7 @@
     &--message {
       // indents
       padding-top: 50px;
-      padding-bottom: 64px;
+      padding-bottom: 62px;
     }
   }
 
@@ -440,7 +442,7 @@
 
     &--message {
       // indents
-      padding-bottom: 60px;
+      padding-bottom: 58px;
     }
   }
 

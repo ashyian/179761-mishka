@@ -4,7 +4,9 @@
   // display
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  // position
+  position: relative;
   // indents
   padding-top: 22px;
 }
@@ -12,6 +14,7 @@
 .header__logo {
   // indents
   margin-left: 116px;
+  margin-right: 61px;
 
   &:hover {
     opacity: 0.6;
@@ -73,6 +76,8 @@
 @media #{$tablet-widths} {
 
   .header {
+    // display
+    justify-content: space-between;
     // indents
     padding-top: 0;
   }
