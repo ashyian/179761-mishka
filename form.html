@@ -89,92 +89,104 @@
         <form class="questionary__form" action="https://echo.htmlacademy.ru" method="get">
 
           <fieldset class="fieldset fieldset--type">
-            <legend class="fieldset__title fieldset__title--type">Тип</legend>
-            <div class="fieldset__list fieldset__list--type">
-              <div class="fieldset__item fieldset__item--type">
-                <input class="fieldset__input fieldset__input--type" type="radio" id="type-interior" name="type" value="interior" checked>
-                <label class="fieldset__label fieldset__label--type" for="type-interior">Аксессуар для интерьера</label>
-              </div>
-              <div class="fieldset__item fieldset__item--type">
-                <input class="fieldset__input fieldset__input--type" type="radio" id="type-toy" name="type" value="toy">
-                <label class="fieldset__label fieldset__label--type" for="type-toy">Детская игрушка</label>
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--type">Тип</span>
+              <div class="fieldset__list fieldset__list--type">
+                <div class="fieldset__item fieldset__item--type">
+                  <input class="fieldset__input fieldset__input--type" type="radio" id="type-interior" name="type" value="interior" checked>
+                  <label class="fieldset__label fieldset__label--type" for="type-interior">Аксессуар для интерьера</label>
+                </div>
+                <div class="fieldset__item fieldset__item--type">
+                  <input class="fieldset__input fieldset__input--type" type="radio" id="type-toy" name="type" value="toy">
+                  <label class="fieldset__label fieldset__label--type" for="type-toy">Детская игрушка</label>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--color">
-            <legend class="fieldset__title fieldset__title--color">Цвет</legend>
-            <div class="fieldset__list fieldset__list--color">
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-white" name="white" checked>
-                <label class="fieldset__label fieldset__label--color" for="color-white">Белый</label>
-              </div>
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-gray" name="gray" checked>
-                <label class="fieldset__label fieldset__label--color" for="color-gray">Серый</label>
-              </div>
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-tiffany" name="tiffany">
-                <label class="fieldset__label fieldset__label--color" for="color-tiffany">«Тиффани»</label>
-              </div>
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-black" name="black">
-                <label class="fieldset__label fieldset__label--color" for="color-black">Черный</label>
-              </div>
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-pink" name="pink">
-                <label class="fieldset__label fieldset__label--color" for="color-pink">Розовый</label>
-              </div>
-              <div class="fieldset__item fieldset__item--color">
-                <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-orange" name="orange">
-                <label class="fieldset__label fieldset__label--color" for="color-orange">Оранжевый</label>
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--color">Цвет</span>
+              <div class="fieldset__list fieldset__list--color">
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-white" name="white" checked>
+                  <label class="fieldset__label fieldset__label--color" for="color-white">Белый</label>
+                </div>
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-gray" name="gray" checked>
+                  <label class="fieldset__label fieldset__label--color" for="color-gray">Серый</label>
+                </div>
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-tiffany" name="tiffany">
+                  <label class="fieldset__label fieldset__label--color" for="color-tiffany">«Тиффани»</label>
+                </div>
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-black" name="black">
+                  <label class="fieldset__label fieldset__label--color" for="color-black">Черный</label>
+                </div>
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-pink" name="pink">
+                  <label class="fieldset__label fieldset__label--color" for="color-pink">Розовый</label>
+                </div>
+                <div class="fieldset__item fieldset__item--color">
+                  <input class="fieldset__input fieldset__input--color" type="checkbox" id="color-orange" name="orange">
+                  <label class="fieldset__label fieldset__label--color" for="color-orange">Оранжевый</label>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--name">
-            <legend class="fieldset__title fieldset__title--name">ФИО</legend>
-            <div class="fieldset__list fieldset__list--name">
-              <div class="fieldset__item fieldset__item--name">
-                <label class="fieldset__label fieldset__label--name" for="name-first">Имя:</label>
-                <input class="fieldset__input fieldset__input--name" type="text" id="name-first" name="first-name" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="fieldset__item fieldset__item--name">
-                <label class="fieldset__label fieldset__label--name" for="name-last">Фамилия:</label>
-                <input class="fieldset__input fieldset__input--name" type="text" id="name-last" name="last-name" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="fieldset__item fieldset__item--name">
-                <label class="fieldset__label fieldset__label--name" for="name-patronymic">Отчество:</label>
-                <input class="fieldset__input fieldset__input--name" type="text" id="name-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--name">ФИО</span>
+              <div class="fieldset__list fieldset__list--name">
+                <div class="fieldset__item fieldset__item--name">
+                  <label class="fieldset__label fieldset__label--name" for="name-first">Имя:</label>
+                  <input class="fieldset__input fieldset__input--name" type="text" id="name-first" name="first-name" placeholder="Введите ваше имя*" required>
+                </div>
+                <div class="fieldset__item fieldset__item--name">
+                  <label class="fieldset__label fieldset__label--name" for="name-last">Фамилия:</label>
+                  <input class="fieldset__input fieldset__input--name" type="text" id="name-last" name="last-name" placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="fieldset__item fieldset__item--name">
+                  <label class="fieldset__label fieldset__label--name" for="name-patronymic">Отчество:</label>
+                  <input class="fieldset__input fieldset__input--name" type="text" id="name-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--phone">
-            <legend class="fieldset__title fieldset__title--phone">Тел</legend>
-            <div class="fieldset__list fieldset__list--phone">
-              <div class="fieldset__item fieldset__item--phone">
-                <input class="fieldset__input fieldset__input--phone" type="tel" name="phone" pattern="\+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
-                <svg class="fieldset__icon fieldset__icon--phone" width="32" height="24.3"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--phone">Тел</span>
+              <div class="fieldset__list fieldset__list--phone">
+                <div class="fieldset__item fieldset__item--phone">
+                  <input class="fieldset__input fieldset__input--phone" type="tel" name="phone" pattern="\+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <svg class="fieldset__icon fieldset__icon--phone" width="32" height="24.3"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--email">
-            <legend class="fieldset__title fieldset__title--email">E-mail</legend>
-            <div class="fieldset__list fieldset__list--email">
-              <div class="fieldset__item fieldset__item--email">
-                <input class="fieldset__input fieldset__input--email" type="email" name="email" placeholder="Ваш Email*" required>
-                <svg class="fieldset__icon fieldset__icon--email" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--email">E-mail</span>
+              <div class="fieldset__list fieldset__list--email">
+                <div class="fieldset__item fieldset__item--email">
+                  <input class="fieldset__input fieldset__input--email" type="email" name="email" placeholder="Ваш Email*" required>
+                  <svg class="fieldset__icon fieldset__icon--email" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--message">
-            <legend class="fieldset__title fieldset__title--message">Доп</legend>
-            <div class="fieldset__list fieldset__list--message">
-              <div class="fieldset__item fieldset__item--message">
-                <textarea class="fieldset__input fieldset__input--message" name="message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="fieldset__wrapper">
+              <span class="fieldset__title fieldset__title--message">Доп</span>
+              <div class="fieldset__list fieldset__list--message">
+                <div class="fieldset__item fieldset__item--message">
+                  <textarea class="fieldset__input fieldset__input--message" name="message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </div>
               </div>
             </div>
           </fieldset>

@@ -2,9 +2,9 @@
 
 .fieldset {
   // indents
-  margin: 0 30px 10px;
-  // borders
-  border-top: 1px solid #62d1ba;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 
   &--phone, &--email {
     // indents
@@ -17,9 +17,13 @@
   }
 }
 
+.fieldset__wrapper {
+  // display
+  display: flex;
+  flex-direction: column;
+}
+
 .fieldset__title {
-  // indents
-  padding-right: 25px;
   // font
   font-weight: bold;
   font-size: 17px;
@@ -32,7 +36,6 @@
   // display
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   // indents
   padding: 15px 0;
 
@@ -70,7 +73,6 @@
 
   &--type, &--color, &--phone, &--email {
     // display
-    flex-direction: row;
     align-items: center;
   }
 
@@ -232,67 +234,34 @@
 @media #{$tablet-widths} {
 
   .fieldset {
-    outline: 1px solid red;
-    // display
-    display: flex;
-    flex-direction: row;
-    // position
-    position: relative;
     // indents
     margin: 0;
-    padding: 21px 50px 25px 217px;
-    // borders
-    border: none;
 
     &--color, &--phone, &--email {
       background-color: #f1f1f1;
     }
+  }
 
-    &--type {
-      // indents
-      padding-bottom: 21px;
-    }
-
-    &--color {
-      // indents
-      padding-right: 0;
-      padding-bottom: 20px;
-    }
-
-    &--phone {
-      // indents
-      padding-bottom: 0;
-    }
-
-    &--email {
-      // indents
-      padding-top: 0;
-      padding-bottom: 35px;
-    }
-
-    &--message {
-      // indents
-      padding-top: 35px;
-      padding-bottom: 49px;
-    }
+  .fieldset__wrapper {
+    // display
+    display: flex;
+    flex-direction: row;
   }
 
   .fieldset__title {
-    outline: 1px solid blue;
-    display: table-cell;
+    // size
+    min-width: 167px;
+    // indents
+    padding-top: 67px;
+    padding-left: 50px;
 
     &--email {
-      top: 26px;
+      // indents
+      padding-top: 24px;
     }
   }
 
   .fieldset__list {
-    outline: 1px solid green;
-
-    &--type, &--color {
-      // indents
-      padding: 34px 0 0;
-    }
 
     &--color {
       // display
@@ -300,14 +269,39 @@
       flex-wrap: wrap;
     }
 
-    &--name, &--phone, &--email {
+    &--type, &--color {
       // indents
-      padding: 16px 0 14px;
+      padding-top: 55px;
+      padding-bottom: 20px;
+    }
+
+    &--name, &--phone, &--email, &--message {
+      // size
+      min-width: 500px;
+    }
+
+    &--name {
+      // indents
+      padding-top: 38px;
+      padding-bottom: 40px;
+    }
+
+    &--phone {
+      // indents
+      padding-top: 38px;
+      padding-bottom: 18px;
+    }
+
+    &--email {
+      // indents
+      padding-top: 16px;
+      padding-bottom: 50px;
     }
 
     &--message {
       // indents
-      padding: 16px 0 15px;
+      padding-top: 50px;
+      padding-bottom: 64px;
     }
   }
 
@@ -386,12 +380,12 @@
 
     &--name {
       // indents
-      padding: 16px 17px 12px;
+      padding: 17px 17px 15px;
     }
 
     &--phone {
       // indents
-      padding: 24px 17px 13px;
+      padding: 25px 17px 14px;
     }
 
     &--email {
@@ -401,15 +395,11 @@
   }
 
   .fieldset__icon {
+    // position
+    right: 22px;
+
     &--phone {
-      // position
-      right: 22px;
-      top: 24px;
-    }
-    &--email {
-      // position
-      right: 22px;
-      top: 5px;
+      top: 22px;
     }
   }
 
@@ -421,76 +411,44 @@
 
 @media #{$desktop-widths} {
 
-  .fieldset {
+  .fieldset__title {
+    // size
+    min-width: 115px;
     // indents
-    margin: 0;
-    padding: 23px 225px 23px 226px;
+    padding-top: 70px;
+    padding-left: 110px;
+  }
 
-    &--color, &--phone, &--email {
-      background-color: #f1f1f1;
-    }
+  .fieldset__list {
 
     &--type, &--color {
       // indents
+      padding-top: 57px;
       padding-bottom: 20px;
     }
 
-    &--color {
-      // indents
-      padding-right: 0;
+    &--name, &--phone, &--email, &--message {
+      // size
+      min-width: 700px;
     }
 
-    &--phone {
+    &--name {
       // indents
-      padding-bottom: 0;
-    }
-
-    &--email {
-      // indents
-      padding-top: 0;
-      padding-bottom: 35px;
+      padding-top: 36px;
+      padding-bottom: 40px;
     }
 
     &--message {
       // indents
-      padding-top: 35px;
-      padding-bottom: 45px;
+      padding-bottom: 60px;
     }
   }
 
   .fieldset__title {
-    // position
-    left: 111px;
-
-    &--type {
-      // position
-      top: 69px;
-      left: 114px;
-    }
-
-    &--phone {
-      // position
-      top: 70px;
-      left: 113px;
-    }
 
     &--email {
-      // position
-      top: 30px;
-      left: 112px;
-    }
-
-    &--message {
-      // position
-      top: 69px;
-      left: 113px;
-    }
-  }
-
-  .fieldset__list {
-    &--name {
       // indents
-      padding-top: 13px;
+      padding-top: 25px;
     }
   }
 
